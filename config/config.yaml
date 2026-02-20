@@ -15,12 +15,9 @@ default:
   search:
     top_k: 10
   db_path: data/
-  server:
-    host: 127.0.0.1
-    port: 8081
   model_name:
     image: google/siglip2-so400m-patch16-naflex
-    text: jinaai/jina-embeddings-v3
+    text: intfloat/multilingual-e5-small
   vlm:
     enabled: true
     provider: clova_studio
