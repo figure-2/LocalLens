@@ -3,6 +3,8 @@
 __pycache__/
 *.pyc
 uv.lock
+.pytest_cache/
+.vscode/
 
 # Visual Studio
 .vs/
@@ -19,6 +21,7 @@ dist/
 data/
 
 model/
-pro_nlp_finalproject_nlp_08.egg-info/
+*.egg-info/
+YTDown_YouTube_Media_nFPk2s7823Q_001_1080p.mp4
 # Environment Variables
 .env
