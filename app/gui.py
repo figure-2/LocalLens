@@ -82,7 +82,7 @@ class SearchApp:
     def __init__(self, root, cfg: DictConfig):
         self.root = root
         self.cfg = cfg
-        self.root.title("MIR 멀티모달 파일 검색기")
+        self.root.title("LocalLens 멀티모달 파일 검색기")
         self.root.geometry("1080x740")
         self.root.minsize(880, 600)
         self.root.configure(bg=COLORS["bg"])
@@ -105,14 +105,14 @@ class SearchApp:
 
         tk.Label(
             header_inner,
-            text="MIR 멀티모달 파일 검색기",
+            text="LocalLens 멀티모달 파일 검색기",
             font=FONTS["caption_bold"],
             fg=COLORS["text_muted"],
             bg=COLORS["surface"],
         ).pack(side=tk.LEFT)
         tk.Label(
             header_inner,
-            text="이미지·텍스트·음성·문서를 자연어로 검색합니다",
+            text="이미지·텍스트·PDF를 자연어로 검색합니다",
             font=FONTS["caption"],
             fg=COLORS["text_muted"],
             bg=COLORS["surface"],
@@ -221,7 +221,7 @@ class SearchApp:
         self.top_k_entry.pack(side=tk.LEFT, padx=(8, 0))
         self.search_button = tk.Button(
             search_inner,
-            text="MIR",
+            text="검색",
             font=FONTS["body_bold"],
             command=self.search,
             bg=COLORS["accent"],

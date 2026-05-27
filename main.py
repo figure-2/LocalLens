@@ -1,5 +1,5 @@
 def main():
-    print("Hello from pro-nlp-finalproject-nlp-08!")
+    print("Hello from LocalLens!")
 
 
 if __name__ == "__main__":
