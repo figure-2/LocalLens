@@ -7,20 +7,30 @@
 <b>LocalLens</b>는 로컬 환경의 텍스트, 이미지, PDF 데이터를 통합 관리하고 자연어 쿼리로 검색할 수 있는 프라이버시 중심의 <b>멀티모달 지능형 검색 서비스</b>입니다.
 고성능 멀티모달 모델을 활용하여 사용자의 로컬 환경 내에 존재하는 이종 데이터 간의 <b>의미론적 연결을 파악</b>하고 통합 검색을 수행하는 엔진을 구축하는 것을 목표로 합니다. <br>특히 클라우드 기반이 아닌 <b>로컬 환경</b>에서의 구동을 지향하여, 개인의 민감한 사진이나 기업의 대외비 문서 등 프라이버시가 중요한 데이터에 대해 외부 유출 없는 안전한 인덱싱 및 검색 환경을 제공하고자 합니다.
 
+## ⏲ 프로젝트 진행
+
+◼ 개발 환경
+
+> <b>하드웨어 및 서버:</b> 로컬 Windows 개발 환경, Docker 기반 PostgreSQL/Qdrant 검증 환경 <br>
+> <b>개발 언어 및 프레임워크:</b> Python, PyTorch, Hugging Face Transformers, Python Tkinter, FastAPI, React <br>
+> <b>검색 및 저장소:</b> Qdrant, PostgreSQL, local manifest, hybrid retrieval <br>
+> <b>데이터 처리:</b> PyMuPDF, pdfplumber, Tesseract(opt-in), VLM provider adapter <br>
+> <b>검증 및 기록:</b> pytest, Docker Compose, PowerShell smoke script, ADR, test evidence
+
 ## 🛠 기술 스택 (Tech Stack)
 
-|       구분        | 상세 기술                              | 비고                         |
-| :---------------: | :------------------------------------- | :--------------------------- |
-|     **언어**      | Python 3.10+                           | 메인 언어                    |
-|   **AI / Core**   | PyTorch, Hugging Face Transformers     | 임베딩 모델 추론             |
-| **텍스트 임베딩** | `intfloat/multilingual-e5-small`       | 다국어 텍스트 임베딩         |
-| **이미지 임베딩** | `google/siglip2-so400m-patch16-naflex` | 이미지-텍스트 멀티모달       |
-|   **PDF 처리**    | PyMuPDF (fitz)                         | PDF 텍스트/이미지 추출       |
-|      **VLM**      | Clova Studio HCX-005                   | PDF 내 이미지 설명 생성      |
-|    **벡터 DB**    | FAISS + SQLite                         | 벡터 저장 및 메타데이터 관리 |
-|      **GUI**      | TKinter                                | 윈도우 데스크톱 클라이언트   |
-|   **설정 관리**   | Hydra + OmegaConf                      | YAML 기반 설정               |
-|    **패키징**     | PyInstaller                            | .exe 배포 빌드               |
+|           구분           | 상세 기술                                              | 비고                                |
+| :----------------------: | :----------------------------------------------------- | :---------------------------------- |
+|         **언어**         | Python 3.10+                                           | 메인 언어                           |
+|      **AI / Core**       | PyTorch, Hugging Face Transformers                     | 임베딩 모델 추론                    |
+|    **텍스트 임베딩**     | `intfloat/multilingual-e5-small`                       | 다국어 텍스트 임베딩                |
+|    **이미지 임베딩**     | `google/siglip2-so400m-patch16-naflex`                 | 이미지-텍스트 멀티모달              |
+|       **PDF 처리**       | PyMuPDF, pdfplumber, Tesseract(opt-in)                 | PDF 텍스트/표/이미지 추출           |
+|         **VLM**          | external VLM-compatible adapter / local VLM / mock VLM | PDF 내 이미지 설명 생성             |
+| **벡터 DB / 메타데이터** | Qdrant + PostgreSQL + local manifest                   | 벡터 저장 및 메타데이터 관리        |
+|      **GUI / Demo**      | Tkinter + FastAPI + React                              | 데스크톱 클라이언트 및 로컬 데모 UI |
+|      **설정 관리**       | 환경 변수 + CLI 옵션                                   | 로컬 실행 및 provider 모드 제어     |
+|      **로컬 검증**       | Docker Compose, pytest, PowerShell smoke script        | PostgreSQL/Qdrant 및 demo E2E 검증  |
 
 ## ⚙ 시스템 구조 및 주요 기능
 
@@ -30,38 +40,41 @@
 graph TB
     subgraph "User Device (Local Environment)"
 
-        subgraph "Frontend (Python/TKinter)"
-            UI[SearchApp GUI]
+        subgraph "Frontend (Tkinter + React Demo)"
+            UI[LocalLens Tkinter UI]
+            WebUI[React Demo UI]
             Launcher[OS File Launcher]
         end
 
         subgraph "Core (Python Modules)"
-            Engine[search_engine.py<br/>search 함수]
-            FileMgr[FileManager<br/>디렉토리 스캔]
-            Store[VectorStore<br/>SQLite + FAISS]
+            Engine[search_service.py<br/>검색 함수]
+            FileMgr[sync_service.py<br/>디렉토리 스캔]
+            Store[qdrant_store.py + manifest.py<br/>Qdrant + PostgreSQL/Manifest]
 
-            subgraph "Encoders"
-                EncMain[Encoder<br/>인코더 관리]
-                EncText[TextEncoder<br/>intfloat/multilingual-e5-small]
-                EncImage[ImageEncoder<br/>SIGLIP2]
-                EncPdf[PdfEncoder<br/>PDF → Text]
+            subgraph "Embedding / Extraction"
+                EncMain[Embedding Router<br/>프로파일 관리]
+                EncText[text_embedder.py<br/>hash / multilingual-e5]
+                EncImage[vision_embedder.py<br/>hash / SigLIP2]
+                EncPdf[pdf_extractor.py<br/>PDF → Text/Page/Caption]
             end
 
-            subgraph "PDF Processing"
+        subgraph "PDF Processing"
                 PdfProc[pdf_processor.py]
-                VLM[VLM Client<br/>Clova Studio]
+                VLM[pdf_vlm_adapter.py<br/>local/mock/external-compatible]
             end
         end
 
         subgraph "Storage"
             Files[[Local File System<br/>txt, md, jpg, png, pdf]]
-            DB[(SQLite Metadata)]
-            FAISS[(FAISS Index)]
+            DB[(PostgreSQL / Manifest Metadata)]
+            VDB[(Qdrant Vector Store)]
         end
     end
 
     User((사용자)) --> UI
+    User --> WebUI
     UI -- "1. 검색 요청" --> Engine
+    WebUI -- "1. 검색 요청" --> Engine
     Engine -- "2. 디렉토리 스캔" --> FileMgr
     FileMgr -- "스캔" --> Files
     Engine -- "3. 벡터 동기화" --> Store
@@ -75,7 +88,7 @@ graph TB
     EncPdf -- "PDF 처리" --> PdfProc
     PdfProc -- "텍스트/이미지 추출" --> Files
     PdfProc -- "이미지 설명" --> VLM
-    Store -- "6. 벡터 저장/검색" --> FAISS
+    Store -- "6. 벡터 저장/검색" --> VDB
     Engine -- "7. 검색 결과" --> UI
     UI -- "8. 파일 클릭" --> Launcher
     Launcher -- "9. 파일 열기" --> Files
@@ -85,7 +98,7 @@ graph TB
 
 1️⃣<b>자연어 쿼리 기반 멀티모달 검색:</b> 사용자가 "강아지가 뛰어노는 사진"이나 "회의록 요약"과 같은 자연어 문장을 입력하면, 텍스트 파일뿐만 아니라 이미지, PDF 문서 등 다양한 포맷의 파일 중 의미적으로 가장 유사한 결과를 검색합니다.<br><br>
 2️⃣<b>로컬 벡터 DB 및 파일 동기화 시스템:</b> 로컬 파일 시스템을 스캔하여 변경(신규, 수정, 삭제)된 파일만을 감지하고, 이를 벡터화하여 자체 구축한 로컬 벡터 DB(Vector Store)에 저장 및 관리합니다. <br><br>
-3️⃣<b>데스크톱 전용 GUI 제공:</b> Python Tkinter 기반의 직관적인 사용자 인터페이스를 제공하여 검색 결과를 시각적으로 확인하고, 클릭 시 즉시 해당 파일 경로로 이동하거나 파일을 열 수 있는 편의 기능을 제공합니다.
+3️⃣<b>로컬 UI 및 데모 제공:</b> Python Tkinter 기반 데스크톱 UI와 FastAPI/React 기반 로컬 데모 UI를 제공하여 검색 결과와 evidence packet 흐름을 확인할 수 있습니다.
 
 ### ◼ 주요 구현 알고리즘 및 기술
 
@@ -105,23 +118,23 @@ graph TB
 
 ### <b>🗃️ VectorStore (벡터 저장소)</b>
 
-VectorStore는 **FAISS**와 **SQLite**를 결합하여 벡터 임베딩과 파일 메타데이터를 통합 관리하는 핵심 컴포넌트입니다.
+VectorStore는 **Qdrant**와 **PostgreSQL/Manifest 메타데이터**를 결합하여 벡터 임베딩과 파일 메타데이터를 통합 관리하는 핵심 컴포넌트입니다.
 
-| 구성 요소       | 역할                                                                            |
-| :-------------- | :------------------------------------------------------------------------------ |
-| **FAISS Index** | 타입별(image, text, docs) 벡터 저장 및 코사인 유사도 기반 고속 검색 수행        |
-| **SQLite**      | 파일 경로, 수정 시간(mtime), 확장자, 타입 등 메타데이터 저장                    |
-| **동기화 로직** | 로컬 파일과 DB 상태를 비교하여 신규/수정/삭제 파일을 감지하고 선택적으로 임베딩 |
-| **검색**        | 쿼리 벡터와 인덱스 벡터 간 코사인 유사도 계산 후 Top-K 결과 반환                |
+| 구성 요소                 | 역할                                                                            |
+| :------------------------ | :------------------------------------------------------------------------------ |
+| **Qdrant Vector Store**   | 타입별(image, text, docs) 벡터 저장 및 코사인 유사도 기반 검색 수행             |
+| **PostgreSQL / Manifest** | 파일 경로, 수정 시간(mtime), 확장자, 타입, workspace 메타데이터 저장            |
+| **동기화 로직**           | 로컬 파일과 DB 상태를 비교하여 신규/수정/삭제 파일을 감지하고 선택적으로 임베딩 |
+| **검색**                  | 쿼리 벡터와 인덱스 벡터 간 코사인 유사도 계산 후 Top-K 결과 반환                |
 
 #### VectorStore 동기화 상세
 
 ```mermaid
 sequenceDiagram
     participant VS as VectorStore
-    participant DB as SQLite
-    participant FAISS as FAISS Index
-    participant Enc as Encoder
+    participant DB as PostgreSQL/Manifest
+    participant VDB as Qdrant
+    participant Enc as EmbeddingBackend
 
     Note over VS: sync_vector_store(local_files) 호출됨
 
@@ -147,8 +160,7 @@ sequenceDiagram
 
     alt to_delete_ids 존재
         VS->>DB: DELETE FROM metadata WHERE id IN (...)
-        VS->>FAISS: remove_ids(id_array)
-        VS->>FAISS: write_index()
+        VS->>VDB: delete vector points
     end
 
     alt to_embed_paths 존재
@@ -160,9 +172,7 @@ sequenceDiagram
             Note over VS: lastrowid 저장
         end
 
-        VS->>FAISS: normalize_L2(vectors)
-        VS->>FAISS: add_with_ids(vectors, ids)
-        VS->>FAISS: write_index()
+        VS->>VDB: upsert vectors with payload
     end
 ```
 
@@ -172,52 +182,48 @@ sequenceDiagram
 
 ```mermaid
 classDiagram
-    class BaseEncoder {
-        <<abstract>>
-        +cache_dir: Path
-        +_chunks(iterable, batch_size)
-        +emb_query(query)* List~float~
-        +emb_file_list(paths, batch_size)* List~List~float~~
+    class SyncService {
+        +scan(folder)
+        +detect_added_updated_deleted()
+        +build_units()
     }
 
-    class TextEncoder {
-        +model_name: str
-        +device: str
-        +model: AutoModel
-        +emb_query(query) List~float~
-        +emb_file_list(paths, batch_size) List~List~float~~
+    class TextEmbedder {
+        +embed_text(query_or_chunk)
+        +hash_backend()
+        +sentence_transformers_backend()
     }
 
-    class ImageEncoder {
-        +model_name: str
-        +device: str
-        +model: AutoModel
-        +processor: AutoProcessor
-        +emb_query(query) List~float~
-        +emb_file_list(paths, batch_size) List~List~float~~
+    class VisionEmbedder {
+        +embed_image(image_path)
+        +hash_backend()
+        +transformers_backend()
     }
 
-    class PdfEncoder {
-        +text_encoder: TextEncoder
-        +vlm_client: VLM
-        +emb_query(query) List~float~
-        +emb_file_list(paths, batch_size) List~List~float~~
+    class PdfExtractor {
+        +extract_text_pages()
+        +extract_tables()
+        +extract_visual_caption_units()
     }
 
-    class Encoder {
-        +encoders: Dict~str, BaseEncoder~
-        +cfg: DictConfig
-        +create_query_embedding(query, type) List~float~
-        +create_embedding_list(paths_dict, batch_size) Dict
+    class QdrantStore {
+        +upsert_units()
+        +search_vectors()
+        +delete_stale_points()
     }
 
-    BaseEncoder <|-- TextEncoder
-    BaseEncoder <|-- ImageEncoder
-    BaseEncoder <|-- PdfEncoder
-    Encoder o-- TextEncoder
-    Encoder o-- ImageEncoder
-    Encoder o-- PdfEncoder
-    PdfEncoder --> TextEncoder : uses
+    class SearchService {
+        +normalize_query()
+        +retrieve_top_k()
+        +format_source_refs()
+    }
+
+    SyncService --> TextEmbedder
+    SyncService --> VisionEmbedder
+    SyncService --> PdfExtractor
+    SyncService --> QdrantStore
+    SearchService --> QdrantStore
+    PdfExtractor --> TextEmbedder : text units
 ```
 
 | 핵심 기술                 | 상세 내용                                                                                                                                                                          |
@@ -232,55 +238,45 @@ classDiagram
 
 ```
 📦LocalLens
- ┣ 📂app                       # 애플리케이션 핵심 로직 및 UI 소스코드
- ┃ ┣ 📂services                # 검색 엔진의 주요 기능을 담당하는 서비스 레이어
- ┃ ┃ ┣ 📜base_encoder.py       # 인코더 구현을 위한 추상 베이스 클래스
- ┃ ┃ ┣ 📜encoder.py            # 통합 인코딩 인터페이스 관리
- ┃ ┃ ┣ 📜file_manager.py       # 로컬 파일 스캔 및 변경 감지(Sync) 로직
- ┃ ┃ ┣ 📜image_encoder.py      # 이미지 데이터 벡터화를 위한 CLIP/SigLIP 기반 인코더
- ┃ ┃ ┣ 📜pdf_encoder.py        # PDF 문서 통합 인코딩 파이프라인
- ┃ ┃ ┣ 📜pdf_processor.py      # PDF 텍스트 추출 및 전처리 유틸리티
- ┃ ┃ ┣ 📜search_engine.py      # 검색 쿼리 처리 및 전체 워크플로우 컨트롤러
- ┃ ┃ ┣ 📜text_encoder.py       # 텍스트 데이터 벡터화를 위한 E5 기반 인코더
- ┃ ┃ ┣ 📜vector_store.py       # FAISS 및 SQLite 기반 벡터/메타데이터 저장소 관리
- ┃ ┃ ┣ 📜vlm_clova.py          # Clova Studio API를 활용한 시각 정보 캡셔닝 모듈
- ┃ ┃ ┣ 📜vlm_mock.py           # 테스트를 위한 VLM 모의(Mock) 모듈
- ┃ ┣ 📜gui.py                  # Tkinter 기반 사용자 인터페이스(Frontend)
- ┣ 📂build / 📂dist            # .exe 실행 파일 빌드 및 배포 산출물
- ┣ 📂config                    # 시스템 설정 값 관리를 위한 YAML 파일
- ┃ ┗ 📜config.yaml             # 모델 경로, API 키, 인덱싱 설정 등 저장
- ┣ 📂data                      # 생성된 벡터 인덱스 및 메타데이터 DB 저장 경로
- ┃ ┣ 📜index_image.faiss       # 이미지 벡터 저장용 FAISS 인덱스
- ┃ ┣ 📜index_text.faiss       # 텍스트/문서 벡터 저장용 FAISS 인덱스
- ┃ ┗ 📜metadata.db             # 파일 경로 및 상태 정보 관리용 SQLite DB
- ┣ 📂model                     # 로컬에 다운로드된 AI 모델 가중치 저장소
- ┣ 📂outputs / 📂results       # 검색 결과 리포트 및 로그 출력 폴더
- ┣ 📂test                      # 단위 테스트 및 파이프라인 검증 코드
- ┣ 📜gui.spec / 📜MyApp.spec   # PyInstaller 빌드 설정을 위한 스펙 파일
- ┣ 📜main.py                   # 애플리케이션 실행 엔트리 포인트
- ┣ 📜pyproject.toml / 📜uv.lock # uv 기반 프로젝트 의존성 및 패키지 관리 설정
- ┗ 📜requirements.txt          # 프로젝트 실행을 위한 라이브러리 목록
+ ┣ 📂locallens                 # 애플리케이션 핵심 로직
+ ┃ ┣ 📂api                     # FastAPI 기반 로컬 데모 API
+ ┃ ┣ 📂app                     # CLI / 앱 실행 엔트리 포인트
+ ┃ ┣ 📂ax                      # AX workspace 확장, 권한/근거 패킷 흐름
+ ┃ ┣ 📂embeddings              # 텍스트/이미지 임베딩 백엔드
+ ┃ ┣ 📂extractors              # 텍스트, 이미지, PDF 추출기
+ ┃ ┣ 📂indexing                # 파일 동기화 및 인덱싱 파이프라인
+ ┃ ┣ 📂retrieval               # 검색, 랭킹, 결과 정규화
+ ┃ ┗ 📂ui                      # Tkinter UI adapter
+ ┣ 📂frontend                  # React 기반 로컬 데모 UI
+ ┣ 📂sql                       # PostgreSQL schema / seed
+ ┣ 📂scripts                   # 로컬 smoke / release 검증 스크립트
+ ┣ 📂docs                      # ADR, evidence, runbook
+ ┣ 📂tests                     # 단위 테스트 및 파이프라인 검증 코드
+ ┣ 📂benchmarks                # fixture, benchmark, demo dataset
+ ┣ 📜docker-compose.ax.yml     # PostgreSQL/Qdrant 로컬 검증 환경
+ ┣ 📜pyproject.toml            # 프로젝트 의존성 및 패키지 설정
+ ┗ 📜README.md                 # 프로젝트 설명 문서
 ```
 
 ## 🔢 데이터 흐름 (Data Flow)
 
-| 단계 | 컴포넌트           | 설명                                         |
-| :--: | :----------------- | :------------------------------------------- |
-|  1   | GUI → SearchEngine | 사용자 쿼리, 대상 디렉토리, 확장자 필터 전달 |
-|  2   | FileManager        | 지정 디렉토리에서 확장자별 파일 목록 스캔    |
-|  3   | VectorStore        | 로컬 파일과 DB 메타데이터 비교하여 동기화    |
-|  4   | Encoder            | 신규/수정된 파일의 임베딩 생성               |
-|  5   | VectorStore        | FAISS 인덱스에서 유사도 검색 수행            |
-|  6   | GUI                | 결과를 타입별로 정렬하여 표시                |
+| 단계 | 컴포넌트               | 설명                                         |
+| :--: | :--------------------- | :------------------------------------------- |
+|  1   | UI/API → SearchService | 사용자 쿼리, 대상 디렉토리, 확장자 필터 전달 |
+|  2   | SyncService            | 지정 디렉토리에서 확장자별 파일 목록 스캔    |
+|  3   | Manifest/QdrantStore   | 로컬 파일과 메타데이터 상태 비교 및 동기화   |
+|  4   | Embedding Backend      | 신규/수정된 파일의 임베딩 생성               |
+|  5   | QdrantStore            | Qdrant 인덱스에서 유사도 검색 수행           |
+|  6   | Result Formatter       | 결과를 타입별로 정렬하고 source_ref 구성     |
 
 ## 🤖 사용 모델
 
-|   타입    | 모델                                   | 용도                                          |
-| :-------: | :------------------------------------- | :-------------------------------------------- |
-| **Text**  | `intfloat/multilingual-e5-small`       | 텍스트 파일/쿼리 임베딩                       |
-| **Image** | `google/siglip2-so400m-patch16-naflex` | 이미지/이미지 검색 쿼리 임베딩                |
-|  **PDF**  | TextEncoder + VLM                      | PDF 텍스트 추출 + 이미지 설명 → 텍스트 임베딩 |
-|  **VLM**  | Clova Studio HCX-005                   | PDF 내 이미지/표/그래프 설명 생성             |
+|   타입    | 모델                                                         | 용도                                          |
+| :-------: | :----------------------------------------------------------- | :-------------------------------------------- |
+| **Text**  | hash backend / `intfloat/multilingual-e5-small` opt-in       | 텍스트 파일/쿼리 임베딩                       |
+| **Image** | hash backend / `google/siglip2-so400m-patch16-naflex` opt-in | 이미지/이미지 검색 쿼리 임베딩                |
+|  **PDF**  | PDF extractor + VLM provider adapter                         | PDF 텍스트 추출 + 이미지 설명 → 텍스트 임베딩 |
+|  **VLM**  | external VLM-compatible adapter / local VLM / mock VLM       | PDF 내 이미지/표/그래프 설명 생성             |
 
 ### 지원 파일 형식
 
@@ -301,8 +297,8 @@ classDiagram
 
 ```bash
 # 저장소 클론
-git clone https://github.com/figure-2/locallens.git
-cd locallens
+git clone https://github.com/figure-2/LocalLens.git
+cd LocalLens
 
 # 의존성 설치
 pip install -e .
@@ -311,50 +307,39 @@ pip install -e .
 ### 실행
 
 ```bash
-python -m app.gui
+python -m locallens.app.main
 ```
 
 또는
 
 ```bash
-python main.py
+python -m locallens.app.cli search "검색어"
 ```
 
-> **참고:** `gui.py`(또는 `python -m app.gui`)를 실행할 때는 `.env_example`을 `.env`로 복사한 뒤, 필요한 값(예: `CLOVA_STUDIO_API_KEY`)을 넣어야 합니다.
+> **참고:** 기본 로컬 검색은 외부 API 없이 동작합니다. external VLM-compatible 경로는 명시적으로 credentials를 설정한 경우에만 사용합니다.
 
-### 빌드 (.exe 배포)
+### 로컬 데모 실행
 
-PyInstaller를 사용하여 단일 실행 파일로 패키징할 수 있습니다.
+FastAPI와 React 데모 UI를 함께 실행할 수 있습니다.
 
 ```bash
-pyinstaller gui.spec --clean --noconfirm
+python -m uvicorn locallens.api.main:app --host 127.0.0.1 --port 8021
+cd frontend
+npm install
+npm run dev -- --host 127.0.0.1 --port 5178
 ```
 
-빌드 완료 시 `dist/` 폴더에 실행 파일이 생성됩니다.
+브라우저에서 `http://127.0.0.1:5178/?api=http%3A%2F%2F127.0.0.1%3A8021`로 접속합니다.
 
-> **참고:** exe 빌드에서는 PDF 검색이 지원되지 않습니다.
+## ⚙ 설정
 
-## ⚙ 설정 (config.yaml)
+기본 로컬 검색은 외부 API 없이 동작하며, 환경 변수와 CLI 옵션으로 데이터 경로, 모델, VLM provider를 조정할 수 있습니다.
 
-`config/config.yaml`에서 모델, 확장자, 검색 파라미터 등을 조정할 수 있습니다.
-
-```yaml
-default:
-  allowed_extensions:
-    image: [.jpg, .jpeg, .png]
-    text: [.txt, .md]
-    docs: [.pdf]
-
-  model_name:
-    image: google/siglip2-so400m-patch16-naflex
-    text: intfloat/multilingual-e5-small
-
-  search:
-    top_k: 10
-
-  vlm:
-    enabled: true
-    provider: clova_studio
+```powershell
+$env:LOCALLENS_DATA_DIR=".locallens\portfolio-demo"
+$env:LOCALLENS_PDF_VLM_MODE="off"          # off | mock-vlm | local-vlm | clova-studio
+$env:LOCALLENS_TEXT_EMBEDDING_BACKEND="hash"
+$env:LOCALLENS_VISION_EMBEDDING_BACKEND="hash"
 ```
 
 ## 📋 사용 방법
@@ -369,8 +354,8 @@ default:
 
 ## ✨ 최종 결과
 
-1️⃣ 파일 검색을 진행할 절대경로를 선택하여 검색 범위를 좁힐 수 있습니다.<br>
-2️⃣ 자연어 검색어를 입력하여 의미론적 검색을 수행합니다. Top K를 조절하여 K개의 검색 결과가 나오도록 조절할 수 있습니다.<br>
-3️⃣ 다양한 확장자들 중 원하는 확장자를 지정하여 검색할 수 있습니다.<br>
-4️⃣ 검색 버튼 클릭 시 바형 인터페이스로 검색 진행 상황을 보여줍니다.<br>
-5️⃣ 파일 형식 ("image", "text", "docs") 별로 검색 결과를 절대 경로로 보여주고, 클릭할 경우 해당 경로에 있는 파일을 실행합니다.<br>
+1️⃣ 검색할 로컬 폴더를 지정해 텍스트, 이미지, PDF 파일을 인덱싱합니다.<br>
+2️⃣ 자연어 검색어를 입력해 파일명뿐 아니라 파일 내부 내용과 이미지 설명을 기준으로 검색합니다.<br>
+3️⃣ 신규/수정/삭제 파일만 감지해 전체 재임베딩 비용을 줄입니다.<br>
+4️⃣ Qdrant와 PostgreSQL/manifest를 분리해 벡터 검색과 메타데이터 관리를 나눕니다.<br>
+5️⃣ 검색 결과를 Agent가 사용할 수 있는 evidence packet 형태로 정규화합니다.<br>
