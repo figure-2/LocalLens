@@ -1,24 +1,67 @@
-# UV 관련
-.venv/
+.locallens/
+.locallens*/
+.local/
+.local*/
+.pytest_cache/
 __pycache__/
-*.pyc
-uv.lock
-
-# Visual Studio
-.vs/
-*.user
-*.suo
-*.wsuo
-
-# Build
-bin/
-obj/
-outputs/
-build/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg-info
+.venv/
+venv/
+node_modules/
+frontend/node_modules/
 dist/
-data/
-
-model/
-pro_nlp_finalproject_nlp_08.egg-info/
-# Environment Variables
+frontend/dist/
 .env
+.env.*
+!.env.example
+*.db
+*.sqlite
+*.sqlite3
+*.log
+benchmark.json
+.tmp_*/
+
+# Local working notes and machine-only files.
+_notes/
+_drafts/
+docs/_drafts/
+*.local.md
+*.local.txt
+*.machine.md
+
+# Private runtime/model caches and local-only candidate artifacts.
+runtime-cache/
+model-cache/
+models-cache/
+paddleocr-cache/
+optional-candidates/
+qdrant_storage/
+qdrant-storage/
+qdrant_snapshots/
+postgres-data/
+postgres_data/
+*.pdmodel
+*.pdiparams
+*.onnx
+*.safetensors
+*.bin
+
+# Secret-like local artifacts.
+*.pem
+*.key
+*.p12
+*.pfx
+*token*
+*secret*
+*password*
+credentials*
+
+# Generated local verification artifacts.
+generated_evidence_artifacts.txt
+publication_artifacts.txt
+release_artifacts.txt
+release_evidence_claims.json
+repo_hygiene_artifacts.txt
