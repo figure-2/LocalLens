@@ -1,0 +1,35 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: locallens-ax-postgres
+    environment:
+      POSTGRES_DB: locallens_ax
+      POSTGRES_USER: locallens
+      POSTGRES_PASSWORD: locallens_local_only
+    ports:
+      - "54329:5432"
+    volumes:
+      - locallens_ax_postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U locallens -d locallens_ax"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: locallens-ax-qdrant
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - locallens_ax_qdrant:/qdrant/storage
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:6333/healthz"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  locallens_ax_postgres:
+  locallens_ax_qdrant:
