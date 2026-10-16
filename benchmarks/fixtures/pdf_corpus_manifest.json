@@ -1,0 +1,2423 @@
+{
+  "schema_version": "pdf-corpus-manifest-v1",
+  "corpus_id": "pdf-ocrtable-synthetic",
+  "corpus_version": "2026-06-02-120",
+  "generator_version": "generate-pdf-expansion-v2",
+  "slice_registry_version": "pdf-slices-v1",
+  "corpus_family": "pdf-ocrtable",
+  "fixture_tier": "synthetic_public",
+  "doc_count": 120,
+  "query_set_ids": [
+    "golden-pdf-base-v1",
+    "golden-pdf-table-v2",
+    "golden-pdf-ocr-en-v2",
+    "golden-pdf-ocr-ko-v2",
+    "golden-pdf-scanned-table-v2",
+    "golden-pdf-cache-safety-v1"
+  ],
+  "artifact_hashes": {
+    "golden_pdf_queries.json": "0c056648691c8b48853a507ceaf584c52c82f6e75dbf299438da5d0f22adc66a",
+    "golden_pdf_table_queries.json": "b58f31c384d07546c94162fd8e3b71e7f2d00f8d109597e9dd5bf310cf7d45ea",
+    "golden_pdf_ocr_queries.json": "deb0c4cd5e67f0a8b31a46759957d3de87cf1f4af834cedeaa3def92c71a9987",
+    "golden_pdf_ocr_korean_queries.json": "e18a4c75d56270023e493c4697b840efad4593c4b42dded3bff50c2ab6b4e564",
+    "golden_pdf_scanned_table_queries.json": "b05e4f34d0ccfb55b407ae2569f7b42f7ef232e4ff07c7f46f38123783d87069",
+    "golden_pdf_cache_safety_queries.json": "80c92a13207acc4288a6ee2c16346b82e441884d452de76d6eb668faa81e7bbf"
+  },
+  "cases": [
+    {
+      "case_id": "born-digital-notes",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "born_digital_notes.pdf",
+      "primary_slice": "base_document",
+      "slice_tags": [
+        "domain:pdf",
+        "task:document-retrieval"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "contract-summary",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "contract_summary.pdf",
+      "primary_slice": "base_document",
+      "slice_tags": [
+        "domain:pdf",
+        "task:document-retrieval"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "diagram-layout",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "diagram_layout.pdf",
+      "primary_slice": "base_visual",
+      "slice_tags": [
+        "domain:pdf",
+        "task:visual-retrieval",
+        "layout:diagram-mixed"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "invoice-like-table",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "invoice_like_table.pdf",
+      "primary_slice": "base_table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:invoice-like"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "mixed-language-notes",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "mixed_language_notes.pdf",
+      "primary_slice": "base_document",
+      "slice_tags": [
+        "domain:pdf",
+        "task:document-retrieval",
+        "lang:ko-en"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "multilingual-visual-notice",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "multilingual_visual_notice.pdf",
+      "primary_slice": "base_visual",
+      "slice_tags": [
+        "domain:pdf",
+        "task:visual-retrieval",
+        "lang:ko-en"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "process-flow",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "process_flow.pdf",
+      "primary_slice": "base_visual",
+      "slice_tags": [
+        "domain:pdf",
+        "task:visual-retrieval",
+        "layout:diagram-mixed"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "product-diagram",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "product_diagram.pdf",
+      "primary_slice": "base_visual",
+      "slice_tags": [
+        "domain:pdf",
+        "task:visual-retrieval",
+        "layout:diagram-mixed"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "report-appendix",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "report_appendix.pdf",
+      "primary_slice": "base_document",
+      "slice_tags": [
+        "domain:pdf",
+        "task:document-retrieval"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "scanned-like-page",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "scanned_like_page.pdf",
+      "primary_slice": "base_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "scan:scanned-like"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "scanned-like"
+    },
+    {
+      "case_id": "scanned-receipt-like",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "scanned_receipt_like.pdf",
+      "primary_slice": "base_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "layout:receipt-like"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-report",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_report.pdf",
+      "primary_slice": "base_table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-budget-review-01",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_budget_review_01.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-rollout-plan-02",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_rollout_plan_02.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-quality-audit-03",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_quality_audit_03.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-support-queue-04",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_support_queue_04.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-inventory-count-05",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_inventory_count_05.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-model-score-06",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_model_score_06.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-storage-cost-07",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_storage_cost_07.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-security-scan-08",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_security_scan_08.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-release-gate-09",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_release_gate_09.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-latency-check-10",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_latency_check_10.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-policy-matrix-11",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_policy_matrix_11.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-dataset-slice-12",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_dataset_slice_12.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-vendor-matrix-13",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_vendor_matrix_13.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-error-budget-14",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_error_budget_14.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-index-delta-15",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_index_delta_15.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-table-coverage-16",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_table_coverage_16.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-ocr-queue-17",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_ocr_queue_17.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-signal-score-18",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_signal_score_18.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-product-roadmap-19",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_product_roadmap_19.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-compliance-matrix-20",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_compliance_matrix_20.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-onboarding-check-21",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_onboarding_check_21.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-incident-review-22",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_incident_review_22.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-model-registry-23",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_model_registry_23.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-access-review-24",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_access_review_24.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-cost-allocation-25",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_cost_allocation_25.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-experiment-score-26",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_experiment_score_26.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-data-retention-27",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_data_retention_27.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-task-handoff-28",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_task_handoff_28.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-audit-sampling-29",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_audit_sampling_29.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "table-capacity-plan-30",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "table_capacity_plan_30.pdf",
+      "primary_slice": "table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_table"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "ocr-receipt-total-01",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_receipt_total_01.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "ocr-service-notice-02",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_service_notice_02.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "ocr-inventory-label-03",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_inventory_label_03.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "ocr-invoice-stamp-04",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_invoice_stamp_04.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "ocr-meeting-card-05",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_meeting_card_05.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "ocr-noisy-receipt-06",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_noisy_receipt_06.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:noisy"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "noisy"
+    },
+    {
+      "case_id": "ocr-rotated-notice-07",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_rotated_notice_07.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:rotated"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "rotated"
+    },
+    {
+      "case_id": "ocr-low-contrast-label-08",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_low_contrast_label_08.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:low-contrast"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "low-contrast"
+    },
+    {
+      "case_id": "ocr-bilingual-gate-09",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_bilingual_gate_09.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:bilingual"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "bilingual"
+    },
+    {
+      "case_id": "ocr-bilingual-inventory-10",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_bilingual_inventory_10.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:bilingual"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "bilingual"
+    },
+    {
+      "case_id": "ocr-noisy-invoice-11",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_noisy_invoice_11.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:noisy"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "noisy"
+    },
+    {
+      "case_id": "ocr-rotated-card-12",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_rotated_card_12.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:rotated"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "rotated"
+    },
+    {
+      "case_id": "ocr-low-contrast-schedule-13",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_low_contrast_schedule_13.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:low-contrast"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "low-contrast"
+    },
+    {
+      "case_id": "ocr-english-badge-14",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_english_badge_14.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "ocr-english-noisy-permit-15",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_english_noisy_permit_15.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:noisy"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "noisy"
+    },
+    {
+      "case_id": "ocr-english-rotated-asset-16",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_english_rotated_asset_16.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:rotated"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "rotated"
+    },
+    {
+      "case_id": "ocr-english-low-contrast-memo-17",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_english_low_contrast_memo_17.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:low-contrast"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "low-contrast"
+    },
+    {
+      "case_id": "ocr-english-bilingual-ticket-18",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_english_bilingual_ticket_18.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:bilingual"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "bilingual"
+    },
+    {
+      "case_id": "ocr-english-small-invoice-19",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_english_small_invoice_19.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:small"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "small"
+    },
+    {
+      "case_id": "ocr-english-dense-card-20",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_english_dense_card_20.pdf",
+      "primary_slice": "english_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "ocr-korean-notice-14",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_notice_14.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean"
+    },
+    {
+      "case_id": "ocr-korean-inventory-15",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_inventory_15.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean"
+    },
+    {
+      "case_id": "ocr-korean-noisy-notice-16",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_noisy_notice_16.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-noisy"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-noisy"
+    },
+    {
+      "case_id": "ocr-korean-low-contrast-receipt-17",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_low_contrast_receipt_17.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-low-contrast"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-low-contrast"
+    },
+    {
+      "case_id": "ocr-korean-rotated-label-18",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_rotated_label_18.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-rotated"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-rotated"
+    },
+    {
+      "case_id": "ocr-korean-bilingual-gate-19",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_bilingual_gate_19.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko-en",
+        "scan:korean-bilingual"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-bilingual"
+    },
+    {
+      "case_id": "ocr-korean-small-text-20",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_small_text_20.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-small"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-small"
+    },
+    {
+      "case_id": "ocr-korean-delivery-21",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_delivery_21.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean"
+    },
+    {
+      "case_id": "ocr-korean-noisy-schedule-22",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_noisy_schedule_22.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-noisy"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-noisy"
+    },
+    {
+      "case_id": "ocr-korean-bilingual-label-23",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_bilingual_label_23.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko-en",
+        "scan:korean-bilingual"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-bilingual"
+    },
+    {
+      "case_id": "ocr-korean-noisy-budget-24",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_noisy_budget_24.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-noisy"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-noisy"
+    },
+    {
+      "case_id": "ocr-korean-rotated-invoice-25",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_rotated_invoice_25.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-rotated"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-rotated"
+    },
+    {
+      "case_id": "ocr-korean-low-contrast-asset-26",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_low_contrast_asset_26.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-low-contrast"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-low-contrast"
+    },
+    {
+      "case_id": "ocr-korean-bilingual-ticket-27",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_bilingual_ticket_27.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko-en",
+        "scan:korean-bilingual"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-bilingual"
+    },
+    {
+      "case_id": "ocr-korean-small-policy-28",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_small_policy_28.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-small"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-small"
+    },
+    {
+      "case_id": "ocr-korean-noisy-temperature-29",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_noisy_temperature_29.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-noisy"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-noisy"
+    },
+    {
+      "case_id": "ocr-korean-rotated-shipping-30",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_rotated_shipping_30.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-rotated"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-rotated"
+    },
+    {
+      "case_id": "ocr-korean-low-contrast-meeting-31",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_low_contrast_meeting_31.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-low-contrast"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-low-contrast"
+    },
+    {
+      "case_id": "ocr-korean-bilingual-audit-32",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_bilingual_audit_32.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko-en",
+        "scan:korean-bilingual"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-bilingual"
+    },
+    {
+      "case_id": "ocr-korean-small-backup-33",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_small_backup_33.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-small"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-small"
+    },
+    {
+      "case_id": "ocr-korean-noisy-access-34",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_noisy_access_34.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-noisy"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-noisy"
+    },
+    {
+      "case_id": "ocr-korean-rotated-asset-35",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_rotated_asset_35.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-rotated"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-rotated"
+    },
+    {
+      "case_id": "ocr-korean-low-contrast-invoice-36",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_low_contrast_invoice_36.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-low-contrast"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-low-contrast"
+    },
+    {
+      "case_id": "ocr-korean-bilingual-ops-37",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_bilingual_ops_37.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko-en",
+        "scan:korean-bilingual"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-bilingual"
+    },
+    {
+      "case_id": "ocr-korean-small-asset-38",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "ocr_korean_small_asset_38.pdf",
+      "primary_slice": "korean_ocr",
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-small"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "korean-small"
+    },
+    {
+      "case_id": "scanned-table-image-01",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "scanned_table_image_01.pdf",
+      "primary_slice": "scanned_table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "scanned-table-blur-02",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "scanned_table_blur_02.pdf",
+      "primary_slice": "scanned_table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:noisy",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "noisy"
+    },
+    {
+      "case_id": "scanned-table-rotated-03",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "scanned_table_rotated_03.pdf",
+      "primary_slice": "scanned_table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:rotated",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "rotated"
+    },
+    {
+      "case_id": "scanned-table-merged-04",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "scanned_table_merged_04.pdf",
+      "primary_slice": "scanned_table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:merged-cell"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "scanned-table-low-contrast-05",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "scanned_table_low_contrast_05.pdf",
+      "primary_slice": "scanned_table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:low-contrast",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "low-contrast"
+    },
+    {
+      "case_id": "scanned-table-noisy-06",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "scanned_table_noisy_06.pdf",
+      "primary_slice": "scanned_table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:noisy",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "noisy"
+    },
+    {
+      "case_id": "scanned-table-bilingual-07",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "scanned_table_bilingual_07.pdf",
+      "primary_slice": "scanned_table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:bilingual",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "bilingual"
+    },
+    {
+      "case_id": "scanned-table-dense-numeric-08",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "scanned_table_dense_numeric_08.pdf",
+      "primary_slice": "scanned_table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:dense"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "scanned-table-skewed-grid-09",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "scanned_table_skewed_grid_09.pdf",
+      "primary_slice": "scanned_table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:skewed",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "skewed"
+    },
+    {
+      "case_id": "scanned-table-small-font-10",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "scanned_table_small_font_10.pdf",
+      "primary_slice": "scanned_table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:small-font",
+        "layout:dense"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "small-font"
+    },
+    {
+      "case_id": "scanned-table-receipt-11",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "scanned_table_receipt_11.pdf",
+      "primary_slice": "scanned_table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:receipt-like"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "scanned-table-invoice-12",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "scanned_table_invoice_12.pdf",
+      "primary_slice": "scanned_table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:invoice-like"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "scanned-table-dense-mixed-13",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "scanned_table_dense_mixed_13.pdf",
+      "primary_slice": "scanned_table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:dense"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "clean"
+    },
+    {
+      "case_id": "scanned-table-bilingual-receipt-14",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "scanned_table_bilingual_receipt_14.pdf",
+      "primary_slice": "scanned_table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:bilingual",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "bilingual"
+    },
+    {
+      "case_id": "scanned-table-low-contrast-invoice-15",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "scanned_table_low_contrast_invoice_15.pdf",
+      "primary_slice": "scanned_table",
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:low-contrast",
+        "layout:simple-grid"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "pdf_ocr_text"
+      ],
+      "content_variant": "low-contrast"
+    },
+    {
+      "case_id": "distractor-notes-01",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_01.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    },
+    {
+      "case_id": "distractor-notes-02",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_02.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    },
+    {
+      "case_id": "distractor-notes-03",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_03.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    },
+    {
+      "case_id": "distractor-notes-04",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_04.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    },
+    {
+      "case_id": "distractor-notes-05",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_05.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    },
+    {
+      "case_id": "distractor-notes-06",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_06.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    },
+    {
+      "case_id": "distractor-notes-07",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_07.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    },
+    {
+      "case_id": "distractor-notes-08",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_08.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    },
+    {
+      "case_id": "distractor-notes-09",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_09.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    },
+    {
+      "case_id": "distractor-notes-10",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_10.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    },
+    {
+      "case_id": "distractor-notes-11",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_11.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    },
+    {
+      "case_id": "distractor-notes-12",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_12.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    },
+    {
+      "case_id": "distractor-notes-13",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_13.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    },
+    {
+      "case_id": "distractor-notes-14",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_14.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    },
+    {
+      "case_id": "distractor-notes-15",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_15.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    },
+    {
+      "case_id": "distractor-notes-16",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_16.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    },
+    {
+      "case_id": "distractor-notes-17",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_17.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    },
+    {
+      "case_id": "distractor-notes-18",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "relative_path": "distractor_notes_18.pdf",
+      "primary_slice": "hard_negative",
+      "slice_tags": [
+        "domain:pdf",
+        "task:hard-negative",
+        "claim:negative-control"
+      ],
+      "fixture_tier": "synthetic_public",
+      "generator_profile": "generate-pdf-expansion-v2",
+      "privacy_class": "generated-fixture",
+      "expected_unit_types": [
+        "document"
+      ],
+      "content_variant": "distractor"
+    }
+  ],
+  "slice_summary": {
+    "claim:negative-control": 18,
+    "domain:pdf": 120,
+    "lang:en": 20,
+    "lang:ko": 20,
+    "lang:ko-en": 7,
+    "layout:dense": 3,
+    "layout:diagram-mixed": 3,
+    "layout:invoice-like": 2,
+    "layout:merged-cell": 1,
+    "layout:receipt-like": 2,
+    "layout:simple-grid": 40,
+    "primary:base_document": 4,
+    "primary:base_ocr": 2,
+    "primary:base_table": 2,
+    "primary:base_visual": 4,
+    "primary:english_ocr": 20,
+    "primary:hard_negative": 18,
+    "primary:korean_ocr": 25,
+    "primary:scanned_table": 15,
+    "primary:table": 30,
+    "scan:bilingual": 5,
+    "scan:clean": 13,
+    "scan:korean": 3,
+    "scan:korean-bilingual": 5,
+    "scan:korean-low-contrast": 4,
+    "scan:korean-noisy": 5,
+    "scan:korean-rotated": 4,
+    "scan:korean-small": 4,
+    "scan:low-contrast": 5,
+    "scan:noisy": 5,
+    "scan:rotated": 4,
+    "scan:scanned-like": 1,
+    "scan:skewed": 1,
+    "scan:small": 1,
+    "scan:small-font": 1,
+    "task:document-retrieval": 4,
+    "task:hard-negative": 18,
+    "task:ocr": 62,
+    "task:table-retrieval": 32,
+    "task:table-structure": 15,
+    "task:visual-retrieval": 4
+  }
+}

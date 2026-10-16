@@ -1,0 +1,73 @@
+{
+  "queries": [
+    {
+      "query": "LocalLens roadmap covers local semantic search, indexing, and evidence retrieval.",
+      "relevant_paths": ["roadmap.md"],
+      "backend_profile": "hash"
+    },
+    {
+      "query": "Privacy notes explain selected-folder indexing, excluded secrets, and relative paths.",
+      "relevant_paths": ["privacy.md"],
+      "backend_profile": "hash"
+    },
+    {
+      "query": "Sync notes describe added, updated, deleted, skipped, and excluded file counts.",
+      "relevant_paths": ["sync.txt"],
+      "backend_profile": "hash"
+    },
+    {
+      "query": "LocalLens stores searchable units with named text and vision vectors plus a manifest for stale result filtering.",
+      "relevant_paths": ["architecture.md"],
+      "modality": "text",
+      "backend_profile": "hash"
+    },
+    {
+      "query": "The desktop interface includes folder selection, indexing actions, query input, modality filters, and result rows with snippets.",
+      "relevant_paths": ["ui_notes.md"],
+      "modality": "text",
+      "backend_profile": "hash"
+    },
+    {
+      "query": "Server mode comparison records indexing time, search latency, integrity counts, and storage behavior separately from local mode.",
+      "relevant_paths": ["server_mode.md"],
+      "modality": "text",
+      "backend_profile": "hash"
+    },
+    {
+      "query": "LocalLens는 선택한 폴더만 인덱싱하고 민감 파일과 절대 경로 노출을 차단한다.",
+      "relevant_paths": ["korean_privacy.md"],
+      "modality": "text",
+      "backend_profile": "hash"
+    },
+    {
+      "query": "LocalLens 동기화는 manifest를 기준으로 추가, 변경, 삭제, 제외 상태를 검증한다.",
+      "relevant_paths": ["korean_sync.md"],
+      "modality": "text",
+      "backend_profile": "hash"
+    },
+    {
+      "query": "LocalLens는 텍스트, PDF 페이지, 이미지 단위를 분리해 멀티모달 검색 근거로 저장한다.",
+      "relevant_paths": ["korean_multimodal.md"],
+      "modality": "text",
+      "backend_profile": "hash"
+    },
+    {
+      "query": "Embedding profiles record text and vision model names, vector dimensions, and reindex boundaries.",
+      "relevant_paths": ["model_profiles.md"],
+      "modality": "text",
+      "backend_profile": "hash"
+    },
+    {
+      "query": "Release gate checks tests, benchmarks, artifact scans, blocked expressions, and measured evidence.",
+      "relevant_paths": ["release_gate.md"],
+      "modality": "text",
+      "backend_profile": "hash"
+    },
+    {
+      "query": "Desktop error handling restores progress indicators and action buttons before showing an error message.",
+      "relevant_paths": ["desktop_errors.md"],
+      "modality": "text",
+      "backend_profile": "hash"
+    }
+  ]
+}

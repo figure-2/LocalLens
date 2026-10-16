@@ -1,0 +1,1282 @@
+{
+  "queries": [
+    {
+      "id": "cache-hard-negative-table-budget-vs-planning-note",
+      "query_id": "cache-hard-negative-table-budget-vs-planning-note",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "budget review table owner variance finance alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_01.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "table-budget-review-01",
+          "relative_path": "table_budget_review_01.pdf",
+          "unit_type": "pdf_table",
+          "gain": 3,
+          "max_rank": 5,
+          "table_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:table-retrieval",
+        "topic:finance"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:table-retrieval",
+        "topic:finance",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-hard-negative-receipt-total-vs-summary-memo",
+      "query_id": "cache-hard-negative-receipt-total-vs-summary-memo",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "receipt total approved amount 184 dollars",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_02.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "ocr-receipt-total-01",
+          "relative_path": "ocr_receipt_total_01.pdf",
+          "unit_type": "pdf_ocr_text",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:ocr",
+        "layout:receipt-like",
+        "lang:en"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:ocr",
+        "layout:receipt-like",
+        "lang:en",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-hard-negative-ko-notice-vs-ops-memo",
+      "query_id": "cache-hard-negative-ko-notice-vs-ops-memo",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "로컬 검색 승인 문서 보관함 이십칠",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_03.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "ocr-korean-notice-14",
+          "relative_path": "ocr_korean_notice_14.pdf",
+          "unit_type": "pdf_ocr_text",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:ocr",
+        "lang:ko"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:ocr",
+        "lang:ko",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-hard-negative-scanned-grid-vs-discussion",
+      "query_id": "cache-hard-negative-scanned-grid-vs-discussion",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "north sales table region owner total kim west lee",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_04.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "scanned-table-image-01",
+          "relative_path": "scanned_table_image_01.pdf",
+          "unit_type": "pdf_ocr_text",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:table-structure",
+        "task:ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:table-structure",
+        "task:ocr",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-hard-negative-invoice-table-vs-planning",
+      "query_id": "cache-hard-negative-invoice-table-vs-planning",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "invoice review table code amount state paid hold",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_05.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "scanned-table-invoice-12",
+          "relative_path": "scanned_table_invoice_12.pdf",
+          "unit_type": "pdf_ocr_text",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:table-structure",
+        "layout:invoice-like"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:table-structure",
+        "layout:invoice-like",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-hard-negative-latency-table-vs-memo",
+      "query_id": "cache-hard-negative-latency-table-vs-memo",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "latency check table path p95 perf alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_06.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "table-latency-check-10",
+          "relative_path": "table_latency_check_10.pdf",
+          "unit_type": "pdf_table",
+          "gain": 3,
+          "max_rank": 5,
+          "table_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:table-retrieval",
+        "topic:perf"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:table-retrieval",
+        "topic:perf",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-hard-negative-audit-sampling-vs-background",
+      "query_id": "cache-hard-negative-audit-sampling-vs-background",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "audit sampling table sample finding audit alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_07.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "table-audit-sampling-29",
+          "relative_path": "table_audit_sampling_29.pdf",
+          "unit_type": "pdf_table",
+          "gain": 3,
+          "max_rank": 5,
+          "table_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:table-retrieval",
+        "topic:audit"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:table-retrieval",
+        "topic:audit",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-hard-negative-inventory-label-vs-narrative",
+      "query_id": "cache-hard-negative-inventory-label-vs-narrative",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "inventory shelf blue count 42 units",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_08.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "ocr-inventory-label-03",
+          "relative_path": "ocr_inventory_label_03.pdf",
+          "unit_type": "pdf_ocr_text",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:ocr",
+        "lang:en"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:ocr",
+        "lang:en",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-hard-negative-routing-table-vs-bilingual-memo",
+      "query_id": "cache-hard-negative-routing-table-vs-bilingual-memo",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "bilingual routing table route status memo seoul busan",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_09.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "scanned-table-bilingual-07",
+          "relative_path": "scanned_table_bilingual_07.pdf",
+          "unit_type": "pdf_ocr_text",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:table-structure",
+        "lang:ko-en"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:table-structure",
+        "lang:ko-en",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-hard-negative-capacity-table-vs-narrative",
+      "query_id": "cache-hard-negative-capacity-table-vs-narrative",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "capacity plan table node usage infra alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_10.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "table-capacity-plan-30",
+          "relative_path": "table_capacity_plan_30.pdf",
+          "unit_type": "pdf_table",
+          "gain": 3,
+          "max_rank": 5,
+          "table_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:table-retrieval",
+        "topic:infra"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:table-retrieval",
+        "topic:infra",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-hard-negative-policy-matrix-vs-narrative",
+      "query_id": "cache-hard-negative-policy-matrix-vs-narrative",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "policy matrix table area decision policy alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_11.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "table-policy-matrix-11",
+          "relative_path": "table_policy_matrix_11.pdf",
+          "unit_type": "pdf_table",
+          "gain": 3,
+          "max_rank": 5,
+          "table_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:table-retrieval",
+        "topic:policy"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:table-retrieval",
+        "topic:policy",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-hard-negative-support-queue-vs-narrative",
+      "query_id": "cache-hard-negative-support-queue-vs-narrative",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "support queue table priority agent support alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_12.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "table-support-queue-04",
+          "relative_path": "table_support_queue_04.pdf",
+          "unit_type": "pdf_table",
+          "gain": 3,
+          "max_rank": 5,
+          "table_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:table-retrieval",
+        "topic:support"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:table-retrieval",
+        "topic:support",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-hard-negative-rotated-asset-vs-narrative",
+      "query_id": "cache-hard-negative-rotated-asset-vs-narrative",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "rotated asset label rack twelve south",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_13.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "ocr-english-rotated-asset-16",
+          "relative_path": "ocr_english_rotated_asset_16.pdf",
+          "unit_type": "pdf_ocr_text",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:ocr",
+        "scan:rotated"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:ocr",
+        "scan:rotated",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-hard-negative-meeting-card-vs-narrative",
+      "query_id": "cache-hard-negative-meeting-card-vs-narrative",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "meeting room change floor three east",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_14.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "ocr-meeting-card-05",
+          "relative_path": "ocr_meeting_card_05.pdf",
+          "unit_type": "pdf_ocr_text",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:ocr",
+        "lang:en"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:ocr",
+        "lang:en",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-hard-negative-backup-card-vs-narrative",
+      "query_id": "cache-hard-negative-backup-card-vs-narrative",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "백업 작업 성공 새벽 두시 완료",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_15.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "ocr-korean-small-backup-33",
+          "relative_path": "ocr_korean_small_backup_33.pdf",
+          "unit_type": "pdf_ocr_text",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:ocr",
+        "lang:ko",
+        "scan:small"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:ocr",
+        "lang:ko",
+        "scan:small",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-hard-negative-shipping-label-vs-narrative",
+      "query_id": "cache-hard-negative-shipping-label-vs-narrative",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "출고 명세 확인 팔레트 칠 번",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_16.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "ocr-korean-rotated-shipping-30",
+          "relative_path": "ocr_korean_rotated_shipping_30.pdf",
+          "unit_type": "pdf_ocr_text",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:ocr",
+        "lang:ko",
+        "scan:rotated"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:ocr",
+        "lang:ko",
+        "scan:rotated",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-hard-negative-quality-table-vs-narrative",
+      "query_id": "cache-hard-negative-quality-table-vs-narrative",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "quality audit table check result qa alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_17.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "table-quality-audit-03",
+          "relative_path": "table_quality_audit_03.pdf",
+          "unit_type": "pdf_table",
+          "gain": 3,
+          "max_rank": 5,
+          "table_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:table-retrieval",
+        "topic:qa"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:table-retrieval",
+        "topic:qa",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-hard-negative-release-gate-vs-narrative",
+      "query_id": "cache-hard-negative-release-gate-vs-narrative",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "release gate table gate evidence release alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "hard-negative",
+      "claim_class": "hard-negative-safety",
+      "negative_paths": [
+        "distractor_notes_18.pdf"
+      ],
+      "relevant": [
+        {
+          "case_id": "table-release-gate-09",
+          "relative_path": "table_release_gate_09.pdf",
+          "unit_type": "pdf_table",
+          "gain": 3,
+          "max_rank": 5,
+          "table_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "hard-negative",
+        "hard-negative-safety",
+        "task:table-retrieval",
+        "topic:release"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "task:table-retrieval",
+        "topic:release",
+        "scenario:hard-negative",
+        "claim-class:hard-negative-safety"
+      ]
+    },
+    {
+      "id": "cache-lifecycle-warm-table-budget",
+      "query_id": "cache-lifecycle-warm-table-budget",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "warm reuse budget review owner variance",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "warm-reuse",
+      "claim_class": "cache-lifecycle-safety",
+      "negative_paths": [],
+      "relevant": [
+        {
+          "case_id": "table-budget-review-01",
+          "relative_path": "table_budget_review_01.pdf",
+          "unit_type": "pdf_table",
+          "gain": 3,
+          "max_rank": 5,
+          "table_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "warm-reuse",
+        "cache-lifecycle-safety",
+        "claim:warm-reuse"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "claim:warm-reuse",
+        "scenario:warm-reuse",
+        "claim-class:cache-lifecycle-safety"
+      ]
+    },
+    {
+      "id": "cache-lifecycle-warm-ocr-receipt",
+      "query_id": "cache-lifecycle-warm-ocr-receipt",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "warm reuse receipt total approved amount",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "warm-reuse",
+      "claim_class": "cache-lifecycle-safety",
+      "negative_paths": [],
+      "relevant": [
+        {
+          "case_id": "ocr-receipt-total-01",
+          "relative_path": "ocr_receipt_total_01.pdf",
+          "unit_type": "pdf_ocr_text",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "warm-reuse",
+        "cache-lifecycle-safety",
+        "claim:warm-reuse"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "claim:warm-reuse",
+        "scenario:warm-reuse",
+        "claim-class:cache-lifecycle-safety"
+      ]
+    },
+    {
+      "id": "cache-lifecycle-stale-table-rollout",
+      "query_id": "cache-lifecycle-stale-table-rollout",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "stale content rollout plan stage status",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "stale-content",
+      "claim_class": "cache-lifecycle-safety",
+      "negative_paths": [],
+      "relevant": [
+        {
+          "case_id": "table-rollout-plan-02",
+          "relative_path": "table_rollout_plan_02.pdf",
+          "unit_type": "pdf_table",
+          "gain": 3,
+          "max_rank": 5,
+          "table_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "stale-content",
+        "cache-lifecycle-safety",
+        "claim:stale-content"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "claim:stale-content",
+        "scenario:stale-content",
+        "claim-class:cache-lifecycle-safety"
+      ]
+    },
+    {
+      "id": "cache-lifecycle-stale-ocr-noisy",
+      "query_id": "cache-lifecycle-stale-ocr-noisy",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "stale content noisy receipt total 216",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "stale-content",
+      "claim_class": "cache-lifecycle-safety",
+      "negative_paths": [],
+      "relevant": [
+        {
+          "case_id": "ocr-noisy-receipt-06",
+          "relative_path": "ocr_noisy_receipt_06.pdf",
+          "unit_type": "pdf_ocr_text",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "stale-content",
+        "cache-lifecycle-safety",
+        "claim:stale-content"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "claim:stale-content",
+        "scenario:stale-content",
+        "claim-class:cache-lifecycle-safety"
+      ]
+    },
+    {
+      "id": "cache-lifecycle-corrupt-table-latency",
+      "query_id": "cache-lifecycle-corrupt-table-latency",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "corrupt cache latency check path p95",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "corrupt-blob",
+      "claim_class": "cache-lifecycle-safety",
+      "negative_paths": [],
+      "relevant": [
+        {
+          "case_id": "table-latency-check-10",
+          "relative_path": "table_latency_check_10.pdf",
+          "unit_type": "pdf_table",
+          "gain": 3,
+          "max_rank": 5,
+          "table_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "corrupt-blob",
+        "cache-lifecycle-safety",
+        "claim:corrupt-blob"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "claim:corrupt-blob",
+        "scenario:corrupt-blob",
+        "claim-class:cache-lifecycle-safety"
+      ]
+    },
+    {
+      "id": "cache-lifecycle-corrupt-ocr-rotated",
+      "query_id": "cache-lifecycle-corrupt-ocr-rotated",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "corrupt cache rotated notice approved",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "corrupt-blob",
+      "claim_class": "cache-lifecycle-safety",
+      "negative_paths": [],
+      "relevant": [
+        {
+          "case_id": "ocr-rotated-notice-07",
+          "relative_path": "ocr_rotated_notice_07.pdf",
+          "unit_type": "pdf_ocr_text",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "corrupt-blob",
+        "cache-lifecycle-safety",
+        "claim:corrupt-blob"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "claim:corrupt-blob",
+        "scenario:corrupt-blob",
+        "claim-class:cache-lifecycle-safety"
+      ]
+    },
+    {
+      "id": "cache-lifecycle-search-source-scanned",
+      "query_id": "cache-lifecycle-search-source-scanned",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "search source proof north sales table",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "search-source-negative",
+      "claim_class": "cache-lifecycle-safety",
+      "negative_paths": [],
+      "relevant": [
+        {
+          "case_id": "scanned-table-image-01",
+          "relative_path": "scanned_table_image_01.pdf",
+          "unit_type": "pdf_ocr_text",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "search-source-negative",
+        "cache-lifecycle-safety",
+        "claim:search-source-negative"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "claim:search-source-negative",
+        "scenario:search-source-negative",
+        "claim-class:cache-lifecycle-safety"
+      ]
+    },
+    {
+      "id": "cache-lifecycle-search-source-ko",
+      "query_id": "cache-lifecycle-search-source-ko",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "search source proof 로컬 검색 승인",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "search-source-negative",
+      "claim_class": "cache-lifecycle-safety",
+      "negative_paths": [],
+      "relevant": [
+        {
+          "case_id": "ocr-korean-notice-14",
+          "relative_path": "ocr_korean_notice_14.pdf",
+          "unit_type": "pdf_ocr_text",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "search-source-negative",
+        "cache-lifecycle-safety",
+        "claim:search-source-negative"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "claim:search-source-negative",
+        "scenario:search-source-negative",
+        "claim-class:cache-lifecycle-safety"
+      ]
+    },
+    {
+      "id": "cache-lifecycle-search-source-release",
+      "query_id": "cache-lifecycle-search-source-release",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "search source proof release gate evidence",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "search-source-negative",
+      "claim_class": "cache-lifecycle-safety",
+      "negative_paths": [],
+      "relevant": [
+        {
+          "case_id": "table-release-gate-09",
+          "relative_path": "table_release_gate_09.pdf",
+          "unit_type": "pdf_table",
+          "gain": 3,
+          "max_rank": 5,
+          "table_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "search-source-negative",
+        "cache-lifecycle-safety",
+        "claim:search-source-negative"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "claim:search-source-negative",
+        "scenario:search-source-negative",
+        "claim-class:cache-lifecycle-safety"
+      ]
+    },
+    {
+      "id": "cache-lifecycle-manifest-scanned-invoice",
+      "query_id": "cache-lifecycle-manifest-scanned-invoice",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "manifest removed invoice review table",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "manifest-removed",
+      "claim_class": "cache-lifecycle-safety",
+      "negative_paths": [],
+      "relevant": [
+        {
+          "case_id": "scanned-table-invoice-12",
+          "relative_path": "scanned_table_invoice_12.pdf",
+          "unit_type": "pdf_ocr_text",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "manifest-removed",
+        "cache-lifecycle-safety",
+        "claim:manifest-removed"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "claim:manifest-removed",
+        "scenario:manifest-removed",
+        "claim-class:cache-lifecycle-safety"
+      ]
+    },
+    {
+      "id": "cache-lifecycle-manifest-ko-bilingual",
+      "query_id": "cache-lifecycle-manifest-ko-bilingual",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "manifest removed 출입 승인 완료 visitor badge",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "manifest-removed",
+      "claim_class": "cache-lifecycle-safety",
+      "negative_paths": [],
+      "relevant": [
+        {
+          "case_id": "ocr-korean-bilingual-gate-19",
+          "relative_path": "ocr_korean_bilingual_gate_19.pdf",
+          "unit_type": "pdf_ocr_text",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "manifest-removed",
+        "cache-lifecycle-safety",
+        "claim:manifest-removed"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "claim:manifest-removed",
+        "scenario:manifest-removed",
+        "claim-class:cache-lifecycle-safety"
+      ]
+    },
+    {
+      "id": "cache-lifecycle-manifest-table-capacity",
+      "query_id": "cache-lifecycle-manifest-table-capacity",
+      "query_set_id": "golden-pdf-cache-safety-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "manifest removed capacity plan node usage",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "scenario": "manifest-removed",
+      "claim_class": "cache-lifecycle-safety",
+      "negative_paths": [],
+      "relevant": [
+        {
+          "case_id": "table-capacity-plan-30",
+          "relative_path": "table_capacity_plan_30.pdf",
+          "unit_type": "pdf_table",
+          "gain": 3,
+          "max_rank": 5,
+          "table_no": 0
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "cache-safety",
+        "manifest-removed",
+        "cache-lifecycle-safety",
+        "claim:manifest-removed"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:cache-safety",
+        "claim:manifest-removed",
+        "scenario:manifest-removed",
+        "claim-class:cache-lifecycle-safety"
+      ]
+    }
+  ]
+}

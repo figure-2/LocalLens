@@ -1,0 +1,5609 @@
+{
+  "queries": [
+    {
+      "id": "text-architecture-ko-001",
+      "query": "검색 단위가 text와 vision named vector로 저장되고 stale 결과는 manifest로 걸러진다",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "architecture.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "korean",
+        "paraphrase",
+        "architecture"
+      ]
+    },
+    {
+      "id": "text-ui-en-001",
+      "query": "Which note talks about folder selection, filters, and result snippets in the desktop interface?",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "ui_notes.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "paraphrase",
+        "ui"
+      ]
+    },
+    {
+      "id": "text-server-en-001",
+      "query": "Find the document about comparing local and server storage performance.",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "server_mode.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "paraphrase",
+        "server"
+      ]
+    },
+    {
+      "id": "text-privacy-ko-001",
+      "query": "선택된 폴더만 처리하고 비밀 파일과 절대 경로 노출을 막는 문서",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "korean_privacy.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "korean",
+        "paraphrase",
+        "privacy"
+      ]
+    },
+    {
+      "id": "text-sync-ko-001",
+      "query": "manifest 기준으로 파일 추가 변경 삭제 제외 상태를 확인하는 내용",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "korean_sync.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "korean",
+        "paraphrase",
+        "sync"
+      ]
+    },
+    {
+      "id": "text-model-profile-en-001",
+      "query": "Which file explains embedding profile dimensions and model change boundaries?",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "model_profiles.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "paraphrase",
+        "models"
+      ]
+    },
+    {
+      "id": "text-desktop-error-en-001",
+      "query": "Find notes about restoring buttons and progress indicators before displaying UI errors.",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "desktop_errors.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "paraphrase",
+        "ui"
+      ]
+    },
+    {
+      "id": "text-privacy-boundary-ko-001",
+      "query": "선택한 폴더 안에서만 스캔하고 비밀 키 파일을 인덱싱 전에 제외하는 정책",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "privacy_boundary_ko.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        },
+        {
+          "relative_path": "korean_privacy.md",
+          "unit_type": "document",
+          "gain": 1,
+          "max_rank": 10
+        }
+      ],
+      "tags": [
+        "text",
+        "korean",
+        "paraphrase",
+        "privacy",
+        "multi-relevant"
+      ]
+    },
+    {
+      "id": "text-privacy-boundary-en-001",
+      "query": "Which note says indexing stays inside the selected folder and skips secret-like files before extraction?",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "privacy_boundary_ko.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 5
+        },
+        {
+          "relative_path": "privacy.md",
+          "unit_type": "document",
+          "gain": 1,
+          "max_rank": 10
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "cross-lingual",
+        "privacy",
+        "multi-relevant"
+      ]
+    },
+    {
+      "id": "text-manifest-stale-en-001",
+      "query": "Which document explains manifest-based stale result filtering and named text and vision vectors?",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "manifest_stale_filter_en.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "paraphrase",
+        "manifest"
+      ]
+    },
+    {
+      "id": "text-sync-lifecycle-ko-001",
+      "query": "추가 수정 삭제 건너뜀 제외 실패 집계를 분리하는 동기화 설명",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "sync_lifecycle_ko.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "korean",
+        "paraphrase",
+        "sync"
+      ]
+    },
+    {
+      "id": "text-desktop-flow-ko-001",
+      "query": "폴더 선택 후 인덱싱 검색 입력 필터 결과 목록을 나누는 데스크톱 흐름",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "desktop_search_flow_ko.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "korean",
+        "paraphrase",
+        "ui"
+      ]
+    },
+    {
+      "id": "text-server-comparison-en-001",
+      "query": "Use the same corpus, profile, and golden file for local and server mode comparison.",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "server_comparison_en.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "paraphrase",
+        "server"
+      ]
+    },
+    {
+      "id": "text-named-vectors-en-001",
+      "query": "relative-path payloads with unit metadata and named text and vision vectors",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "named_vectors_architecture_en.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "paraphrase",
+        "architecture"
+      ]
+    },
+    {
+      "id": "text-redaction-vs-exclusion-en-001",
+      "query": "Which note is about result preview redaction after extraction, not filename filtering?",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "snippet_redaction_en.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "near-negative",
+        "security"
+      ]
+    },
+    {
+      "id": "text-exclusion-vs-redaction-ko-001",
+      "query": "추출 전에 적용되는 파일명 제외 규칙과 빌드 산출물 제외 정책",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "indexing_exclusion_ko.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "korean",
+        "near-negative",
+        "security"
+      ]
+    },
+    {
+      "id": "text-long-chunk-ops-ko-001",
+      "query": "manifest 검증으로 stale 결과를 반환 직전에 제거하는 긴 운영 메모 구간",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "long_chunk_ops_ko.md",
+          "unit_type": "chunk",
+          "chunk_no": 1,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "text",
+        "korean",
+        "chunk-target",
+        "manifest"
+      ]
+    },
+    {
+      "id": "text-long-chunk-eval-en-001",
+      "query": "the section warning that tiny local and server comparisons are functional checks rather than throughput benchmarks",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "long_chunk_eval_en.md",
+          "unit_type": "chunk",
+          "chunk_no": 1,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "chunk-target",
+        "server"
+      ]
+    },
+    {
+      "id": "text-architecture-en-002",
+      "query": "named text and vision vectors with manifest stale result filtering",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "architecture.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "architecture",
+        "near-negative"
+      ]
+    },
+    {
+      "id": "text-named-vectors-en-002",
+      "query": "relative paths unit type page number chunk number image number content hash embedding profile",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "named_vectors_architecture_en.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "architecture",
+        "models"
+      ]
+    },
+    {
+      "id": "text-reindex-profile-en-002",
+      "query": "Changing an embedding profile requires a separate reindex boundary",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "named_vectors_architecture_en.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "models",
+        "paraphrase"
+      ]
+    },
+    {
+      "id": "text-sync-counts-en-002",
+      "query": "added updated deleted skipped excluded failed manifest sync report counts",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "sync_lifecycle_ko.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "sync",
+        "cross-lingual"
+      ]
+    },
+    {
+      "id": "text-sync-skipped-ko-002",
+      "query": "변경되지 않은 파일 skipped 사라진 파일 검색 단위 manifest 제거",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "sync_lifecycle_ko.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "korean",
+        "sync",
+        "manifest"
+      ]
+    },
+    {
+      "id": "text-desktop-result-ko-002",
+      "query": "결과 행 점수 파일명 page 번호 snippet 함께 보여준다",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "desktop_search_flow_ko.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "korean",
+        "ui"
+      ]
+    },
+    {
+      "id": "text-desktop-progress-ko-002",
+      "query": "긴 인덱싱 진행 상태 실패 후 버튼 복구 오류 문구 표시",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "desktop_search_flow_ko.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "korean",
+        "ui"
+      ]
+    },
+    {
+      "id": "text-release-gate-en-002",
+      "query": "tests benchmarks artifact scans blocked expressions measured evidence release gate checks",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "release_gate.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "release",
+        "security"
+      ]
+    },
+    {
+      "id": "text-privacy-short-en-002",
+      "query": "selected-folder indexing excluded secrets relative paths privacy notes",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "privacy.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "privacy"
+      ]
+    },
+    {
+      "id": "text-snippet-redaction-en-002",
+      "query": "result display hygiene after extraction removes secret-like values from searchable preview data",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "snippet_redaction_en.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "security",
+        "near-negative"
+      ]
+    },
+    {
+      "id": "text-manifest-current-en-002",
+      "query": "manifest decides whether a search unit is still current after a file changes or disappears",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "manifest_stale_filter_en.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "manifest",
+        "sync"
+      ]
+    },
+    {
+      "id": "text-server-metrics-en-002",
+      "query": "server mode comparison records indexing time latency percentiles stale duplicate counts and storage size",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "server_comparison_en.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "server"
+      ]
+    },
+    {
+      "id": "text-exclusion-policy-ko-002",
+      "query": "env 계열 키 파일 인증 정보 압축 파일 빌드 산출물 기본 제외 대상",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "indexing_exclusion_ko.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "korean",
+        "security",
+        "privacy"
+      ]
+    },
+    {
+      "id": "text-privacy-boundary-ko-002",
+      "query": "root id 상대 경로 payload 절대 경로 대신 남긴다",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "privacy_boundary_ko.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "korean",
+        "privacy"
+      ]
+    },
+    {
+      "id": "text-long-chunk-eval-en-002",
+      "query": "Evaluation memo section two target sentence functional checks not throughput benchmarks",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "long_chunk_eval_en.md",
+          "unit_type": "chunk",
+          "chunk_no": 1,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "chunk-target",
+        "server"
+      ]
+    },
+    {
+      "id": "text-model-profile-en-002",
+      "query": "Embedding profiles record model names vector dimensions and reindex boundaries",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "model_profiles.md",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "text",
+        "english",
+        "models"
+      ]
+    },
+    {
+      "id": "image-red-square-en-001",
+      "query": "a red square on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "red_square.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 1
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape"
+      ]
+    },
+    {
+      "id": "image-blue-square-en-001",
+      "query": "a blue square on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "blue_square.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 1
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape"
+      ]
+    },
+    {
+      "id": "image-green-square-en-001",
+      "query": "a green square on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "green_square.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 1
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape"
+      ]
+    },
+    {
+      "id": "image-yellow-circle-en-001",
+      "query": "a yellow circle on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "yellow_circle.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 1
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape"
+      ]
+    },
+    {
+      "id": "image-purple-triangle-en-001",
+      "query": "a purple triangle on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "purple_triangle.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 1
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape"
+      ]
+    },
+    {
+      "id": "image-black-diamond-en-001",
+      "query": "a black diamond on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "black_diamond.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 1
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape"
+      ]
+    },
+    {
+      "id": "image-orange-circle-en-001",
+      "query": "a orange circle on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "orange_circle.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-cyan-triangle-en-001",
+      "query": "a cyan triangle on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "cyan_triangle.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-pink-star-en-001",
+      "query": "a pink star on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "pink_star.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-gray-hexagon-en-001",
+      "query": "a gray hexagon on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "gray_hexagon.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-brown-rectangle-en-001",
+      "query": "a brown rectangle on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "brown_rectangle.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-teal-oval-en-001",
+      "query": "a teal oval on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "teal_oval.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-navy-cross-en-001",
+      "query": "a navy cross on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "navy_cross.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-lime-ring-en-001",
+      "query": "a lime ring on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "lime_ring.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-magenta-diamond-en-001",
+      "query": "a magenta diamond on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "magenta_diamond.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-silver-pentagon-en-001",
+      "query": "a silver pentagon on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "silver_pentagon.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-maroon-square-en-001",
+      "query": "a maroon square on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "maroon_square.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-gold-triangle-en-001",
+      "query": "a gold triangle on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "gold_triangle.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-indigo-circle-en-001",
+      "query": "a indigo circle on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "indigo_circle.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-olive-rectangle-en-001",
+      "query": "a olive rectangle on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "olive_rectangle.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-coral-star-en-001",
+      "query": "a coral star on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "coral_star.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-turquoise-diamond-en-001",
+      "query": "a turquoise diamond on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "turquoise_diamond.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-violet-hexagon-en-001",
+      "query": "a violet hexagon on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "violet_hexagon.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-charcoal-cross-en-001",
+      "query": "a charcoal cross on a light background",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "charcoal_cross.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "color",
+        "shape",
+        "synthetic"
+      ]
+    },
+    {
+      "id": "image-office-blue-laptop-en-001",
+      "query": "a blue laptop on an office desk",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "office_blue_laptop.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-office-gray-laptop-en-001",
+      "query": "a gray laptop on an office desk",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "office_gray_laptop.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-kitchen-red-mug-en-001",
+      "query": "a red mug on a kitchen table",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "kitchen_red_mug.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-kitchen-blue-mug-en-001",
+      "query": "a blue mug on a kitchen table",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "kitchen_blue_mug.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-parking-white-car-en-001",
+      "query": "a white car in a parking lot",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "parking_white_car.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-parking-yellow-car-en-001",
+      "query": "a yellow car in a parking lot",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "parking_yellow_car.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-meeting-green-board-en-001",
+      "query": "a green board in a meeting room",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "meeting_green_board.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-meeting-blue-board-en-001",
+      "query": "a blue board in a meeting room",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "meeting_blue_board.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-warehouse-yellow-boxes-en-001",
+      "query": "yellow boxes in a warehouse",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "warehouse_yellow_boxes.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-warehouse-blue-boxes-en-001",
+      "query": "blue boxes in a warehouse",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "warehouse_blue_boxes.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-dashboard-green-bars-en-001",
+      "query": "a dashboard with green bar charts",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "dashboard_green_bars.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-dashboard-red-bars-en-001",
+      "query": "a dashboard with red bar charts",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "dashboard_red_bars.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-desk-red-lamp-en-001",
+      "query": "a red desk lamp on a work table",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "desk_red_lamp.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-desk-blue-lamp-en-001",
+      "query": "a blue desk lamp on a work table",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "desk_blue_lamp.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-plant-green-pot-en-001",
+      "query": "a green plant pot on a shelf",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "plant_green_pot.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-plant-purple-pot-en-001",
+      "query": "a purple plant pot on a shelf",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "plant_purple_pot.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-bookshelf-blue-books-en-001",
+      "query": "blue books on a bookshelf",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "bookshelf_blue_books.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-bookshelf-red-books-en-001",
+      "query": "red books on a bookshelf",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "bookshelf_red_books.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-bicycle-red-frame-en-001",
+      "query": "a red bicycle frame",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "bicycle_red_frame.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-bicycle-blue-frame-en-001",
+      "query": "a blue bicycle frame",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "bicycle_blue_frame.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-tent-orange-campsite-en-001",
+      "query": "an orange tent at a campsite",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "tent_orange_campsite.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-tent-green-campsite-en-001",
+      "query": "a green tent at a campsite",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "tent_green_campsite.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-train-red-car-en-001",
+      "query": "a red train car on rails",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "train_red_car.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-train-blue-car-en-001",
+      "query": "a blue train car on rails",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "train_blue_car.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-cone-orange-road-en-001",
+      "query": "an orange traffic cone on a road",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "cone_orange_road.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-cone-yellow-road-en-001",
+      "query": "a yellow traffic cone on a road",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "cone_yellow_road.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-phone-black-screen-en-001",
+      "query": "a black smartphone on a desk",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "phone_black_screen.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-phone-white-screen-en-001",
+      "query": "a white smartphone on a desk",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "phone_white_screen.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-headphones-black-en-001",
+      "query": "black headphones on a table",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "headphones_black.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-headphones-red-en-001",
+      "query": "red headphones on a table",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "headphones_red.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-suitcase-purple-en-001",
+      "query": "a purple suitcase near a doorway",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "suitcase_purple.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-suitcase-green-en-001",
+      "query": "a green suitcase near a doorway",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "suitcase_green.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-umbrella-yellow-en-001",
+      "query": "a yellow umbrella by a window",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "umbrella_yellow.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-umbrella-blue-en-001",
+      "query": "a blue umbrella by a window",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "umbrella_blue.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-clock-black-wall-en-001",
+      "query": "a black clock on a wall",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "clock_black_wall.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-clock-blue-wall-en-001",
+      "query": "a blue clock on a wall",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "clock_blue_wall.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "realworld-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-airport-blue-kiosk-en-001",
+      "query": "blue airport check-in kiosk",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "airport_blue_kiosk.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-airport-green-kiosk-en-001",
+      "query": "green airport check-in kiosk",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "airport_green_kiosk.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-clinic-blue-folder-en-001",
+      "query": "blue folder at a clinic desk",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "clinic_blue_folder.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-clinic-red-folder-en-001",
+      "query": "red folder at a clinic desk",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "clinic_red_folder.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-factory-yellow-robot-en-001",
+      "query": "yellow robot arm in a factory",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "factory_yellow_robot.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-factory-blue-robot-en-001",
+      "query": "blue robot arm in a factory",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "factory_blue_robot.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-lab-green-microscope-en-001",
+      "query": "green microscope in a lab",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "lab_green_microscope.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-lab-purple-microscope-en-001",
+      "query": "purple microscope in a lab",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "lab_purple_microscope.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-library-orange-chair-en-001",
+      "query": "orange chair in a library",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "library_orange_chair.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-library-teal-chair-en-001",
+      "query": "teal chair in a library",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "library_teal_chair.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-map-red-pin-en-001",
+      "query": "red map pin on a city map",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "map_red_pin.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-map-blue-pin-en-001",
+      "query": "blue map pin on a city map",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "map_blue_pin.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-monitor-green-chart-en-001",
+      "query": "green chart on a monitor",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "monitor_green_chart.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-monitor-red-chart-en-001",
+      "query": "red chart on a monitor",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "monitor_red_chart.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-notebook-yellow-sticky-en-001",
+      "query": "yellow sticky note in a notebook",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "notebook_yellow_sticky.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-notebook-pink-sticky-en-001",
+      "query": "pink sticky note in a notebook",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "notebook_pink_sticky.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-package-blue-label-en-001",
+      "query": "blue label on a shipping package",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "package_blue_label.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-package-red-label-en-001",
+      "query": "red label on a shipping package",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "package_red_label.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-robot-black-sensor-en-001",
+      "query": "black sensor on a small robot",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "robot_black_sensor.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-robot-white-sensor-en-001",
+      "query": "white sensor on a small robot",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "robot_white_sensor.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-server-green-lights-en-001",
+      "query": "green lights on a server rack",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "server_green_lights.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-server-red-lights-en-001",
+      "query": "red lights on a server rack",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "server_red_lights.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-subway-blue-sign-en-001",
+      "query": "blue sign in a subway station",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "subway_blue_sign.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-subway-orange-sign-en-001",
+      "query": "orange sign in a subway station",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "subway_orange_sign.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-tool-silver-wrench-en-001",
+      "query": "silver wrench on a workbench",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "tool_silver_wrench.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-tool-black-wrench-en-001",
+      "query": "black wrench on a workbench",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "tool_black_wrench.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-whiteboard-green-notes-en-001",
+      "query": "green notes on a whiteboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "whiteboard_green_notes.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-whiteboard-blue-notes-en-001",
+      "query": "blue notes on a whiteboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "whiteboard_blue_notes.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-window-rainy-view-en-001",
+      "query": "rainy view through a window",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "window_rainy_view.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-window-sunny-view-en-001",
+      "query": "sunny view through a window",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "window_sunny_view.png",
+          "unit_type": "image",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "hard-negative"
+      ]
+    },
+    {
+      "id": "image-badge-blue-security-en-001",
+      "query": "blue security badge",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "badge_blue_security.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "security"
+      ]
+    },
+    {
+      "id": "image-badge-green-security-en-001",
+      "query": "green security badge",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "badge_green_security.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "security"
+      ]
+    },
+    {
+      "id": "image-binder-red-archive-en-001",
+      "query": "red archive binder",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "binder_red_archive.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "archive"
+      ]
+    },
+    {
+      "id": "image-binder-gray-archive-en-001",
+      "query": "gray archive binder",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "binder_gray_archive.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "archive"
+      ]
+    },
+    {
+      "id": "image-calendar-green-deadline-en-001",
+      "query": "green deadline mark on a calendar",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "calendar_green_deadline.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "deadline"
+      ]
+    },
+    {
+      "id": "image-calendar-purple-deadline-en-001",
+      "query": "purple deadline mark on a calendar",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "calendar_purple_deadline.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "deadline"
+      ]
+    },
+    {
+      "id": "image-camera-black-tripod-en-001",
+      "query": "black camera on a tripod",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "camera_black_tripod.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "tripod"
+      ]
+    },
+    {
+      "id": "image-camera-silver-tripod-en-001",
+      "query": "silver camera on a tripod",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "camera_silver_tripod.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "tripod"
+      ]
+    },
+    {
+      "id": "image-chart-blue-pie-en-001",
+      "query": "blue pie chart on a report",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "chart_blue_pie.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "pie"
+      ]
+    },
+    {
+      "id": "image-chart-orange-pie-en-001",
+      "query": "orange pie chart on a report",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "chart_orange_pie.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "pie"
+      ]
+    },
+    {
+      "id": "image-clipboard-teal-checklist-en-001",
+      "query": "teal checklist on a clipboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "clipboard_teal_checklist.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "checklist"
+      ]
+    },
+    {
+      "id": "image-clipboard-yellow-checklist-en-001",
+      "query": "yellow checklist on a clipboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "clipboard_yellow_checklist.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "checklist"
+      ]
+    },
+    {
+      "id": "image-mailbox-blue-parcel-en-001",
+      "query": "blue parcel near a mailbox",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "mailbox_blue_parcel.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "parcel"
+      ]
+    },
+    {
+      "id": "image-mailbox-brown-parcel-en-001",
+      "query": "brown parcel near a mailbox",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "mailbox_brown_parcel.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "parcel"
+      ]
+    },
+    {
+      "id": "image-printer-black-paper-en-001",
+      "query": "black printer with paper",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "printer_black_paper.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "paper"
+      ]
+    },
+    {
+      "id": "image-printer-white-paper-en-001",
+      "query": "white printer with paper",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "printer_white_paper.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "paper"
+      ]
+    },
+    {
+      "id": "image-receipt-red-stamp-en-001",
+      "query": "red stamp on a receipt",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "receipt_red_stamp.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "stamp"
+      ]
+    },
+    {
+      "id": "image-receipt-blue-stamp-en-001",
+      "query": "blue stamp on a receipt",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "receipt_blue_stamp.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "stamp"
+      ]
+    },
+    {
+      "id": "image-router-green-signal-en-001",
+      "query": "green signal lights on a router",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "router_green_signal.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "signal"
+      ]
+    },
+    {
+      "id": "image-router-amber-signal-en-001",
+      "query": "amber signal lights on a router",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "router_amber_signal.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "signal"
+      ]
+    },
+    {
+      "id": "image-tablet-black-dashboard-en-001",
+      "query": "black tablet showing a dashboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "tablet_black_dashboard.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "dashboard"
+      ]
+    },
+    {
+      "id": "image-tablet-white-dashboard-en-001",
+      "query": "white tablet showing a dashboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "tablet_white_dashboard.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "dashboard"
+      ]
+    },
+    {
+      "id": "image-ticket-pink-transit-en-001",
+      "query": "pink transit ticket",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "ticket_pink_transit.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "transit"
+      ]
+    },
+    {
+      "id": "image-ticket-blue-transit-en-001",
+      "query": "blue transit ticket",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "ticket_blue_transit.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "transit"
+      ]
+    },
+    {
+      "id": "image-vial-blue-lab-en-001",
+      "query": "blue vial in a lab tray",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "vial_blue_lab.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "lab"
+      ]
+    },
+    {
+      "id": "image-vial-amber-lab-en-001",
+      "query": "amber vial in a lab tray",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "vial_amber_lab.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "lab"
+      ]
+    },
+    {
+      "id": "image-wallet-black-card-en-001",
+      "query": "black wallet with a card",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "wallet_black_card.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "card"
+      ]
+    },
+    {
+      "id": "image-wallet-tan-card-en-001",
+      "query": "tan wallet with a card",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "wallet_tan_card.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "card"
+      ]
+    },
+    {
+      "id": "image-workstation-green-screen-en-001",
+      "query": "green screen on a workstation",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "workstation_green_screen.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "screen"
+      ]
+    },
+    {
+      "id": "image-workstation-purple-screen-en-001",
+      "query": "purple screen on a workstation",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "workstation_purple_screen.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "screen"
+      ]
+    },
+    {
+      "id": "image-badge-red-compliance-en-001",
+      "query": "red compliance badge",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "badge_red_compliance.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "compliance"
+      ]
+    },
+    {
+      "id": "image-badge-purple-compliance-en-001",
+      "query": "purple compliance badge",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "badge_purple_compliance.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "compliance"
+      ]
+    },
+    {
+      "id": "image-binder-blue-manual-en-001",
+      "query": "blue manual binder",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "binder_blue_manual.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "manual"
+      ]
+    },
+    {
+      "id": "image-binder-green-manual-en-001",
+      "query": "green manual binder",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "binder_green_manual.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "manual"
+      ]
+    },
+    {
+      "id": "image-calendar-red-review-en-001",
+      "query": "red review mark on a calendar",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "calendar_red_review.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "review"
+      ]
+    },
+    {
+      "id": "image-calendar-orange-review-en-001",
+      "query": "orange review mark on a calendar",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "calendar_orange_review.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "review"
+      ]
+    },
+    {
+      "id": "image-camera-blue-inspection-en-001",
+      "query": "blue camera for inspection",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "camera_blue_inspection.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "inspection"
+      ]
+    },
+    {
+      "id": "image-camera-gray-inspection-en-001",
+      "query": "gray camera for inspection",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "camera_gray_inspection.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "inspection"
+      ]
+    },
+    {
+      "id": "image-chart-green-budget-en-001",
+      "query": "green budget pie chart",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "chart_green_budget.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "budget"
+      ]
+    },
+    {
+      "id": "image-chart-purple-budget-en-001",
+      "query": "purple budget pie chart",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "chart_purple_budget.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "budget"
+      ]
+    },
+    {
+      "id": "image-clipboard-red-audit-en-001",
+      "query": "red audit checklist on a clipboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "clipboard_red_audit.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "audit"
+      ]
+    },
+    {
+      "id": "image-clipboard-blue-audit-en-001",
+      "query": "blue audit checklist on a clipboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "clipboard_blue_audit.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "audit"
+      ]
+    },
+    {
+      "id": "image-mailbox-green-dispatch-en-001",
+      "query": "green dispatch parcel near a mailbox",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "mailbox_green_dispatch.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "dispatch"
+      ]
+    },
+    {
+      "id": "image-mailbox-gray-dispatch-en-001",
+      "query": "gray dispatch parcel near a mailbox",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "mailbox_gray_dispatch.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "dispatch"
+      ]
+    },
+    {
+      "id": "image-printer-blue-invoice-en-001",
+      "query": "blue printer with invoice paper",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "printer_blue_invoice.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "invoice"
+      ]
+    },
+    {
+      "id": "image-printer-gray-invoice-en-001",
+      "query": "gray printer with invoice paper",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "printer_gray_invoice.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "invoice"
+      ]
+    },
+    {
+      "id": "image-receipt-green-approval-en-001",
+      "query": "green approval stamp on a receipt",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "receipt_green_approval.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "approval"
+      ]
+    },
+    {
+      "id": "image-receipt-purple-approval-en-001",
+      "query": "purple approval stamp on a receipt",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "receipt_purple_approval.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "approval"
+      ]
+    },
+    {
+      "id": "image-router-blue-backup-en-001",
+      "query": "blue backup signal lights on a router",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "router_blue_backup.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "backup"
+      ]
+    },
+    {
+      "id": "image-router-red-backup-en-001",
+      "query": "red backup signal lights on a router",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "router_red_backup.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "backup"
+      ]
+    },
+    {
+      "id": "image-tablet-green-metrics-en-001",
+      "query": "green tablet showing metrics",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "tablet_green_metrics.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "metrics"
+      ]
+    },
+    {
+      "id": "image-tablet-purple-metrics-en-001",
+      "query": "purple tablet showing metrics",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "tablet_purple_metrics.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "metrics"
+      ]
+    },
+    {
+      "id": "image-ticket-green-gate-en-001",
+      "query": "green gate transit ticket",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "ticket_green_gate.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "gate"
+      ]
+    },
+    {
+      "id": "image-ticket-yellow-gate-en-001",
+      "query": "yellow gate transit ticket",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "ticket_yellow_gate.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "gate"
+      ]
+    },
+    {
+      "id": "image-vial-red-quality-en-001",
+      "query": "red quality vial in a lab tray",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "vial_red_quality.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "quality"
+      ]
+    },
+    {
+      "id": "image-vial-teal-quality-en-001",
+      "query": "teal quality vial in a lab tray",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "vial_teal_quality.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "quality"
+      ]
+    },
+    {
+      "id": "image-wallet-blue-identity-en-001",
+      "query": "blue identity wallet with a card",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "wallet_blue_identity.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "identity"
+      ]
+    },
+    {
+      "id": "image-wallet-gray-identity-en-001",
+      "query": "gray identity wallet with a card",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "wallet_gray_identity.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "identity"
+      ]
+    },
+    {
+      "id": "image-workstation-blue-monitoring-en-001",
+      "query": "blue monitoring screen on a workstation",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "workstation_blue_monitoring.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "image-workstation-red-monitoring-en-001",
+      "query": "red monitoring screen on a workstation",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "workstation_red_monitoring.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "image-badge-yellow-access-en-001",
+      "query": "yellow access badge",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "badge_yellow_access.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "access"
+      ]
+    },
+    {
+      "id": "image-badge-teal-access-en-001",
+      "query": "teal access badge",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "badge_teal_access.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "access"
+      ]
+    },
+    {
+      "id": "image-binder-purple-contract-en-001",
+      "query": "purple contract binder",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "binder_purple_contract.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "contract"
+      ]
+    },
+    {
+      "id": "image-binder-tan-contract-en-001",
+      "query": "tan contract binder",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "binder_tan_contract.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "contract"
+      ]
+    },
+    {
+      "id": "image-calendar-blue-meeting-en-001",
+      "query": "blue meeting mark on a calendar",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "calendar_blue_meeting.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "meeting"
+      ]
+    },
+    {
+      "id": "image-calendar-yellow-meeting-en-001",
+      "query": "yellow meeting mark on a calendar",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "calendar_yellow_meeting.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "meeting"
+      ]
+    },
+    {
+      "id": "image-camera-green-survey-en-001",
+      "query": "green camera for survey",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "camera_green_survey.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "survey"
+      ]
+    },
+    {
+      "id": "image-camera-red-survey-en-001",
+      "query": "red camera for survey",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "camera_red_survey.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "survey"
+      ]
+    },
+    {
+      "id": "image-chart-teal-forecast-en-001",
+      "query": "teal forecast pie chart",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "chart_teal_forecast.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "forecast"
+      ]
+    },
+    {
+      "id": "image-chart-gray-forecast-en-001",
+      "query": "gray forecast pie chart",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "chart_gray_forecast.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "forecast"
+      ]
+    },
+    {
+      "id": "image-clipboard-green-safety-en-001",
+      "query": "green safety checklist on a clipboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "clipboard_green_safety.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "safety"
+      ]
+    },
+    {
+      "id": "image-clipboard-purple-safety-en-001",
+      "query": "purple safety checklist on a clipboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "clipboard_purple_safety.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "safety"
+      ]
+    },
+    {
+      "id": "image-mailbox-red-return-en-001",
+      "query": "red return parcel near a mailbox",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "mailbox_red_return.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "return"
+      ]
+    },
+    {
+      "id": "image-mailbox-blue-return-en-001",
+      "query": "blue return parcel near a mailbox",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "mailbox_blue_return.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "return"
+      ]
+    },
+    {
+      "id": "image-printer-green-statement-en-001",
+      "query": "green printer with statement paper",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "printer_green_statement.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "statement"
+      ]
+    },
+    {
+      "id": "image-printer-tan-statement-en-001",
+      "query": "tan printer with statement paper",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "printer_tan_statement.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "statement"
+      ]
+    },
+    {
+      "id": "image-receipt-yellow-refund-en-001",
+      "query": "yellow refund stamp on a receipt",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "receipt_yellow_refund.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "refund"
+      ]
+    },
+    {
+      "id": "image-receipt-teal-refund-en-001",
+      "query": "teal refund stamp on a receipt",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "receipt_teal_refund.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "refund"
+      ]
+    },
+    {
+      "id": "image-router-purple-alert-en-001",
+      "query": "purple alert signal lights on a router",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "router_purple_alert.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "alert"
+      ]
+    },
+    {
+      "id": "image-router-gray-alert-en-001",
+      "query": "gray alert signal lights on a router",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "router_gray_alert.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "alert"
+      ]
+    },
+    {
+      "id": "image-tablet-red-status-en-001",
+      "query": "red tablet showing status",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "tablet_red_status.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "status"
+      ]
+    },
+    {
+      "id": "image-tablet-blue-status-en-001",
+      "query": "blue tablet showing status",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "tablet_blue_status.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "status"
+      ]
+    },
+    {
+      "id": "image-ticket-orange-boarding-en-001",
+      "query": "orange boarding ticket",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "ticket_orange_boarding.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "boarding"
+      ]
+    },
+    {
+      "id": "image-ticket-teal-boarding-en-001",
+      "query": "teal boarding ticket",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "ticket_teal_boarding.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "boarding"
+      ]
+    },
+    {
+      "id": "image-vial-green-sample-en-001",
+      "query": "green sample vial in a lab tray",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "vial_green_sample.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "sample"
+      ]
+    },
+    {
+      "id": "image-vial-purple-sample-en-001",
+      "query": "purple sample vial in a lab tray",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "vial_purple_sample.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "sample"
+      ]
+    },
+    {
+      "id": "image-wallet-red-badge-en-001",
+      "query": "red wallet with a badge card",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "wallet_red_badge.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "badge"
+      ]
+    },
+    {
+      "id": "image-wallet-green-badge-en-001",
+      "query": "green wallet with a badge card",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "wallet_green_badge.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "badge"
+      ]
+    },
+    {
+      "id": "image-workstation-yellow-terminal-en-001",
+      "query": "yellow terminal screen on a workstation",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "workstation_yellow_terminal.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "terminal"
+      ]
+    },
+    {
+      "id": "image-workstation-gray-terminal-en-001",
+      "query": "gray terminal screen on a workstation",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "workstation_gray_terminal.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "terminal"
+      ]
+    },
+    {
+      "id": "image-badge-orange-policy-en-001",
+      "query": "orange policy badge",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "badge_orange_policy.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "policy"
+      ]
+    },
+    {
+      "id": "image-badge-brown-policy-en-001",
+      "query": "brown policy badge",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "badge_brown_policy.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "policy"
+      ]
+    },
+    {
+      "id": "image-binder-teal-record-en-001",
+      "query": "teal record binder",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "binder_teal_record.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "record"
+      ]
+    },
+    {
+      "id": "image-binder-yellow-record-en-001",
+      "query": "yellow record binder",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "binder_yellow_record.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "record"
+      ]
+    },
+    {
+      "id": "image-calendar-gray-schedule-en-001",
+      "query": "gray schedule mark on a calendar",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "calendar_gray_schedule.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "schedule"
+      ]
+    },
+    {
+      "id": "image-calendar-teal-schedule-en-001",
+      "query": "teal schedule mark on a calendar",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "calendar_teal_schedule.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "schedule"
+      ]
+    },
+    {
+      "id": "image-camera-purple-evidence-en-001",
+      "query": "purple camera for evidence",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "camera_purple_evidence.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "evidence"
+      ]
+    },
+    {
+      "id": "image-camera-tan-evidence-en-001",
+      "query": "tan camera for evidence",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "camera_tan_evidence.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "evidence"
+      ]
+    },
+    {
+      "id": "image-chart-red-margin-en-001",
+      "query": "red margin pie chart",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "chart_red_margin.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "margin"
+      ]
+    },
+    {
+      "id": "image-chart-blue-margin-en-001",
+      "query": "blue margin pie chart",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "chart_blue_margin.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "margin"
+      ]
+    },
+    {
+      "id": "image-clipboard-gray-inventory-en-001",
+      "query": "gray inventory checklist on a clipboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "clipboard_gray_inventory.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "inventory"
+      ]
+    },
+    {
+      "id": "image-clipboard-orange-inventory-en-001",
+      "query": "orange inventory checklist on a clipboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "clipboard_orange_inventory.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "inventory"
+      ]
+    },
+    {
+      "id": "image-mailbox-purple-request-en-001",
+      "query": "purple request parcel near a mailbox",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "mailbox_purple_request.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "request"
+      ]
+    },
+    {
+      "id": "image-mailbox-tan-request-en-001",
+      "query": "tan request parcel near a mailbox",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "mailbox_tan_request.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "request"
+      ]
+    },
+    {
+      "id": "image-printer-red-contract-en-001",
+      "query": "red printer with contract paper",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "printer_red_contract.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "contract"
+      ]
+    },
+    {
+      "id": "image-printer-teal-contract-en-001",
+      "query": "teal printer with contract paper",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "printer_teal_contract.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "contract"
+      ]
+    },
+    {
+      "id": "image-receipt-black-verified-en-001",
+      "query": "black verified stamp on a receipt",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "receipt_black_verified.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "verified"
+      ]
+    },
+    {
+      "id": "image-receipt-orange-verified-en-001",
+      "query": "orange verified stamp on a receipt",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "receipt_orange_verified.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "verified"
+      ]
+    },
+    {
+      "id": "image-router-yellow-uplink-en-001",
+      "query": "yellow uplink signal lights on a router",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "router_yellow_uplink.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "uplink"
+      ]
+    },
+    {
+      "id": "image-router-teal-uplink-en-001",
+      "query": "teal uplink signal lights on a router",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "router_teal_uplink.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "realworld-style",
+        "hard-negative",
+        "uplink"
+      ]
+    }
+  ]
+}

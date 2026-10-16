@@ -1,0 +1,46 @@
+[
+  {
+    "document_id": "doc_hr_leave_policy",
+    "title": "휴가 신청 가이드",
+    "document_type_in_seed": "pdf",
+    "source_kind": "mock_source_pdf",
+    "file": "doc_hr_leave_policy_v1.pdf",
+    "chunks": [
+      "chunk_hr_leave_001",
+      "chunk_hr_leave_002"
+    ]
+  },
+  {
+    "document_id": "doc_all_security_policy",
+    "title": "사내 문서 보안 기본 정책",
+    "document_type_in_seed": "pdf",
+    "source_kind": "mock_source_pdf",
+    "file": "doc_all_security_policy_v1.pdf",
+    "chunks": [
+      "chunk_security_policy_001",
+      "chunk_security_policy_002"
+    ]
+  },
+  {
+    "document_id": "doc_eng_oncall_runbook",
+    "title": "장애 대응 온콜 Runbook",
+    "document_type_in_seed": "markdown",
+    "source_kind": "mock_export_preview_pdf",
+    "file": "doc_eng_oncall_runbook_v3_export_preview.pdf",
+    "chunks": [
+      "chunk_eng_oncall_001",
+      "chunk_eng_oncall_002"
+    ]
+  },
+  {
+    "document_id": "doc_sales_proposal_template",
+    "title": "고객 제안서 작성 템플릿",
+    "document_type_in_seed": "pptx",
+    "source_kind": "mock_export_preview_pdf",
+    "file": "doc_sales_proposal_template_v2_export_preview.pdf",
+    "chunks": [
+      "chunk_sales_template_001",
+      "chunk_sales_template_002"
+    ]
+  }
+]

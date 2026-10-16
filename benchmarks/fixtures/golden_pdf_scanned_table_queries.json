@@ -1,0 +1,949 @@
+{
+  "queries": [
+    {
+      "id": "scanned-table-scanned_table_image_01",
+      "query_id": "scanned-table-scanned_table_image_01",
+      "query_set_id": "golden-pdf-scanned-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "north sales table region owner total north kim 184 west lee 126",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "expected_table": {
+        "rows": [
+          [
+            "region",
+            "owner",
+            "total"
+          ],
+          [
+            "north",
+            "kim",
+            "184"
+          ],
+          [
+            "west",
+            "lee",
+            "126"
+          ]
+        ]
+      },
+      "relevant": [
+        {
+          "case_id": "scanned-table-image-01",
+          "relative_path": "scanned_table_image_01.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "scanned-table",
+        "clean",
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "scanned-table-scanned_table_blur_02",
+      "query_id": "scanned-table-scanned_table_blur_02",
+      "query_set_id": "golden-pdf-scanned-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "support queue table ticket priority agent alpha high mina beta low joon",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "expected_table": {
+        "rows": [
+          [
+            "ticket",
+            "priority",
+            "agent"
+          ],
+          [
+            "alpha",
+            "high",
+            "mina"
+          ],
+          [
+            "beta",
+            "low",
+            "joon"
+          ]
+        ]
+      },
+      "relevant": [
+        {
+          "case_id": "scanned-table-blur-02",
+          "relative_path": "scanned_table_blur_02.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "scanned-table",
+        "blurred",
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:noisy",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:noisy",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "scanned-table-scanned_table_rotated_03",
+      "query_id": "scanned-table-scanned_table_rotated_03",
+      "query_set_id": "golden-pdf-scanned-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "latency sample table path p95 owner search 42ms ops index 88ms data",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "expected_table": {
+        "rows": [
+          [
+            "path",
+            "p95",
+            "owner"
+          ],
+          [
+            "search",
+            "42ms",
+            "ops"
+          ],
+          [
+            "index",
+            "88ms",
+            "data"
+          ]
+        ]
+      },
+      "relevant": [
+        {
+          "case_id": "scanned-table-rotated-03",
+          "relative_path": "scanned_table_rotated_03.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "scanned-table",
+        "rotated",
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:rotated",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:rotated",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "scanned-table-scanned_table_merged_04",
+      "query_id": "scanned-table-scanned_table_merged_04",
+      "query_set_id": "golden-pdf-scanned-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "merged cell table group status count release ready 17 audit review 9",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "expected_table": {
+        "rows": [
+          [
+            "group",
+            "status",
+            "count"
+          ],
+          [
+            "release",
+            "ready",
+            "17"
+          ],
+          [
+            "audit",
+            "review",
+            "9"
+          ]
+        ]
+      },
+      "relevant": [
+        {
+          "case_id": "scanned-table-merged-04",
+          "relative_path": "scanned_table_merged_04.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "scanned-table",
+        "merged-cell",
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:merged-cell",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:merged-cell",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "scanned-table-scanned_table_low_contrast_05",
+      "query_id": "scanned-table-scanned_table_low_contrast_05",
+      "query_set_id": "golden-pdf-scanned-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "low contrast table item state score alpha ready 71 gamma watch 43",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "expected_table": {
+        "rows": [
+          [
+            "item",
+            "state",
+            "score"
+          ],
+          [
+            "alpha",
+            "ready",
+            "71"
+          ],
+          [
+            "gamma",
+            "watch",
+            "43"
+          ]
+        ]
+      },
+      "relevant": [
+        {
+          "case_id": "scanned-table-low-contrast-05",
+          "relative_path": "scanned_table_low_contrast_05.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "scanned-table",
+        "low-contrast",
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:low-contrast",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:low-contrast",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "scanned-table-scanned_table_noisy_06",
+      "query_id": "scanned-table-scanned_table_noisy_06",
+      "query_set_id": "golden-pdf-scanned-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "noisy intake table batch owner count kappa nora 218 lambda ivan 164",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "expected_table": {
+        "rows": [
+          [
+            "batch",
+            "owner",
+            "count"
+          ],
+          [
+            "kappa",
+            "nora",
+            "218"
+          ],
+          [
+            "lambda",
+            "ivan",
+            "164"
+          ]
+        ]
+      },
+      "relevant": [
+        {
+          "case_id": "scanned-table-noisy-06",
+          "relative_path": "scanned_table_noisy_06.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "scanned-table",
+        "noisy",
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:noisy",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:noisy",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "scanned-table-scanned_table_bilingual_07",
+      "query_id": "scanned-table-scanned_table_bilingual_07",
+      "query_set_id": "golden-pdf-scanned-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "bilingual routing table route status memo seoul open gate busan hold desk",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "expected_table": {
+        "rows": [
+          [
+            "route",
+            "status",
+            "memo"
+          ],
+          [
+            "seoul",
+            "open",
+            "gate"
+          ],
+          [
+            "busan",
+            "hold",
+            "desk"
+          ]
+        ]
+      },
+      "relevant": [
+        {
+          "case_id": "scanned-table-bilingual-07",
+          "relative_path": "scanned_table_bilingual_07.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "scanned-table",
+        "bilingual",
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:bilingual",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:bilingual",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "scanned-table-scanned_table_dense_numeric_08",
+      "query_id": "scanned-table-scanned_table_dense_numeric_08",
+      "query_set_id": "golden-pdf-scanned-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "dense numeric table metric p95 p99 query 118ms 241ms sync 384ms 722ms",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "expected_table": {
+        "rows": [
+          [
+            "metric",
+            "p95",
+            "p99"
+          ],
+          [
+            "query",
+            "118ms",
+            "241ms"
+          ],
+          [
+            "sync",
+            "384ms",
+            "722ms"
+          ]
+        ]
+      },
+      "relevant": [
+        {
+          "case_id": "scanned-table-dense-numeric-08",
+          "relative_path": "scanned_table_dense_numeric_08.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "scanned-table",
+        "dense-numeric",
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:dense",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:dense",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "scanned-table-scanned_table_skewed_grid_09",
+      "query_id": "scanned-table-scanned_table_skewed_grid_09",
+      "query_set_id": "golden-pdf-scanned-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "skewed grid table lane owner risk north lina low south taro high",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "expected_table": {
+        "rows": [
+          [
+            "lane",
+            "owner",
+            "risk"
+          ],
+          [
+            "north",
+            "lina",
+            "low"
+          ],
+          [
+            "south",
+            "taro",
+            "high"
+          ]
+        ]
+      },
+      "relevant": [
+        {
+          "case_id": "scanned-table-skewed-grid-09",
+          "relative_path": "scanned_table_skewed_grid_09.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "scanned-table",
+        "skewed",
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:skewed",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:skewed",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "scanned-table-scanned_table_small_font_10",
+      "query_id": "scanned-table-scanned_table_small_font_10",
+      "query_set_id": "golden-pdf-scanned-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "small font table case signal rank delta strong one omega weak nine",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "expected_table": {
+        "rows": [
+          [
+            "case",
+            "signal",
+            "rank"
+          ],
+          [
+            "delta",
+            "strong",
+            "one"
+          ],
+          [
+            "omega",
+            "weak",
+            "nine"
+          ]
+        ]
+      },
+      "relevant": [
+        {
+          "case_id": "scanned-table-small-font-10",
+          "relative_path": "scanned_table_small_font_10.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "scanned-table",
+        "small-font",
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:small-font",
+        "layout:dense",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:small-font",
+        "layout:dense",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "scanned-table-scanned_table_receipt_11",
+      "query_id": "scanned-table-scanned_table_receipt_11",
+      "query_set_id": "golden-pdf-scanned-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "receipt line table item qty total paper two 18 clip five 7",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "expected_table": {
+        "rows": [
+          [
+            "item",
+            "qty",
+            "total"
+          ],
+          [
+            "paper",
+            "two",
+            "18"
+          ],
+          [
+            "clip",
+            "five",
+            "7"
+          ]
+        ]
+      },
+      "relevant": [
+        {
+          "case_id": "scanned-table-receipt-11",
+          "relative_path": "scanned_table_receipt_11.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "scanned-table",
+        "receipt-like",
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:receipt-like",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:receipt-like",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "scanned-table-scanned_table_invoice_12",
+      "query_id": "scanned-table-scanned_table_invoice_12",
+      "query_set_id": "golden-pdf-scanned-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "invoice review table code amount state a31 219 paid b72 144 hold",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "expected_table": {
+        "rows": [
+          [
+            "code",
+            "amount",
+            "state"
+          ],
+          [
+            "a31",
+            "219",
+            "paid"
+          ],
+          [
+            "b72",
+            "144",
+            "hold"
+          ]
+        ]
+      },
+      "relevant": [
+        {
+          "case_id": "scanned-table-invoice-12",
+          "relative_path": "scanned_table_invoice_12.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "scanned-table",
+        "invoice-like",
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:invoice-like",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:invoice-like",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "scanned-table-scanned_table_dense_mixed_13",
+      "query_id": "scanned-table-scanned_table_dense_mixed_13",
+      "query_set_id": "golden-pdf-scanned-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "dense mixed table unit count memo alpha 312 ready theta 419 watch",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "expected_table": {
+        "rows": [
+          [
+            "unit",
+            "count",
+            "memo"
+          ],
+          [
+            "alpha",
+            "312",
+            "ready"
+          ],
+          [
+            "theta",
+            "419",
+            "watch"
+          ]
+        ]
+      },
+      "relevant": [
+        {
+          "case_id": "scanned-table-dense-mixed-13",
+          "relative_path": "scanned_table_dense_mixed_13.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "scanned-table",
+        "dense-numeric",
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:dense",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:clean",
+        "layout:dense",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "scanned-table-scanned_table_bilingual_receipt_14",
+      "query_id": "scanned-table-scanned_table_bilingual_receipt_14",
+      "query_set_id": "golden-pdf-scanned-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "bilingual receipt table section status memo seoul ready local incheon hold desk",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "expected_table": {
+        "rows": [
+          [
+            "section",
+            "status",
+            "memo"
+          ],
+          [
+            "seoul",
+            "ready",
+            "local"
+          ],
+          [
+            "incheon",
+            "hold",
+            "desk"
+          ]
+        ]
+      },
+      "relevant": [
+        {
+          "case_id": "scanned-table-bilingual-receipt-14",
+          "relative_path": "scanned_table_bilingual_receipt_14.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "scanned-table",
+        "bilingual",
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:bilingual",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:bilingual",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "scanned-table-scanned_table_low_contrast_invoice_15",
+      "query_id": "scanned-table-scanned_table_low_contrast_invoice_15",
+      "query_set_id": "golden-pdf-scanned-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "low contrast invoice table line price owner delta 88 nina sigma 63 yoon",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "expected_table": {
+        "rows": [
+          [
+            "line",
+            "price",
+            "owner"
+          ],
+          [
+            "delta",
+            "88",
+            "nina"
+          ],
+          [
+            "sigma",
+            "63",
+            "yoon"
+          ]
+        ]
+      },
+      "relevant": [
+        {
+          "case_id": "scanned-table-low-contrast-invoice-15",
+          "relative_path": "scanned_table_low_contrast_invoice_15.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "scanned-table",
+        "low-contrast",
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:low-contrast",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-structure",
+        "task:ocr",
+        "scan:low-contrast",
+        "layout:simple-grid",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    }
+  ]
+}

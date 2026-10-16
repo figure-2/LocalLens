@@ -1,0 +1,295 @@
+{
+  "queries": [
+    {
+      "id": "vlm-caption-diagram-layout-001",
+      "query": "service storage flow diagram",
+      "modality": "text",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "diagram_layout.pdf",
+          "unit_type": "pdf_visual_caption",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "vlm-caption",
+        "diagram"
+      ]
+    },
+    {
+      "id": "vlm-caption-product-diagram-001",
+      "query": "product diagram local retrieval engine",
+      "modality": "text",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "product_diagram.pdf",
+          "unit_type": "pdf_visual_caption",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "vlm-caption",
+        "diagram"
+      ]
+    },
+    {
+      "id": "vlm-caption-process-flow-001",
+      "query": "scan extract index flow visual diagram",
+      "modality": "text",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "process_flow.pdf",
+          "unit_type": "pdf_visual_caption",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "vlm-caption",
+        "diagram",
+        "workflow"
+      ]
+    },
+    {
+      "id": "vlm-caption-multilingual-notice-001",
+      "query": "multilingual visual notice Korean English",
+      "modality": "text",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "multilingual_visual_notice.pdf",
+          "unit_type": "pdf_visual_caption",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "vlm-caption",
+        "multilingual",
+        "korean",
+        "english"
+      ]
+    },
+    {
+      "id": "vlm-caption-scanned-page-001",
+      "query": "scanned like page image",
+      "modality": "text",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "scanned_like_page.pdf",
+          "unit_type": "pdf_visual_caption",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "vlm-caption",
+        "scanned-like"
+      ]
+    },
+    {
+      "id": "vlm-caption-receipt-page-001",
+      "query": "synthetic receipt image scanned like PDF",
+      "modality": "text",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "scanned_receipt_like.pdf",
+          "unit_type": "pdf_visual_caption",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "vlm-caption",
+        "receipt",
+        "scanned-like"
+      ]
+    },
+    {
+      "id": "vlm-caption-diagram-layout-002",
+      "query": "visual boxes storage service pipeline",
+      "modality": "text",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "diagram_layout.pdf",
+          "unit_type": "pdf_visual_caption",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "vlm-caption",
+        "diagram"
+      ]
+    },
+    {
+      "id": "vlm-caption-product-diagram-002",
+      "query": "local retrieval vector engine product architecture",
+      "modality": "text",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "product_diagram.pdf",
+          "unit_type": "pdf_visual_caption",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "vlm-caption",
+        "diagram"
+      ]
+    },
+    {
+      "id": "vlm-caption-process-flow-002",
+      "query": "folder scan extract index search workflow",
+      "modality": "text",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "process_flow.pdf",
+          "unit_type": "pdf_visual_caption",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "vlm-caption",
+        "diagram",
+        "workflow"
+      ]
+    },
+    {
+      "id": "vlm-caption-multilingual-notice-002",
+      "query": "Korean English visual warning notice",
+      "modality": "text",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "multilingual_visual_notice.pdf",
+          "unit_type": "pdf_visual_caption",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "vlm-caption",
+        "multilingual",
+        "korean",
+        "english"
+      ]
+    },
+    {
+      "id": "vlm-caption-scanned-page-002",
+      "query": "gray scanned document page visual",
+      "modality": "text",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "scanned_like_page.pdf",
+          "unit_type": "pdf_visual_caption",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "vlm-caption",
+        "scanned-like"
+      ]
+    },
+    {
+      "id": "vlm-caption-receipt-page-002",
+      "query": "receipt total amount scanned document",
+      "modality": "text",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "scanned_receipt_like.pdf",
+          "unit_type": "pdf_visual_caption",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "vlm-caption",
+        "receipt",
+        "scanned-like"
+      ]
+    },
+    {
+      "id": "vlm-caption-multilingual-notice-003",
+      "query": "bilingual notice sign Korean text English text",
+      "modality": "text",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "multilingual_visual_notice.pdf",
+          "unit_type": "pdf_visual_caption",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "vlm-caption",
+        "multilingual",
+        "korean",
+        "english"
+      ]
+    },
+    {
+      "id": "vlm-caption-receipt-page-003",
+      "query": "scanned receipt payment line items total",
+      "modality": "text",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "scanned_receipt_like.pdf",
+          "unit_type": "pdf_visual_caption",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "vlm-caption",
+        "receipt",
+        "scanned-like"
+      ]
+    }
+  ]
+}

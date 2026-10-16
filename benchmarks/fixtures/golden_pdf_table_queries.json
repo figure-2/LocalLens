@@ -1,0 +1,1204 @@
+{
+  "queries": [
+    {
+      "id": "table-table_budget_review_01",
+      "query_id": "table-table_budget_review_01",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "budget review table owner variance finance alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-budget-review-01",
+          "relative_path": "table_budget_review_01.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "finance",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:finance",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_rollout_plan_02",
+      "query_id": "table-table_rollout_plan_02",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "rollout plan table stage status delivery alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-rollout-plan-02",
+          "relative_path": "table_rollout_plan_02.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "delivery",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:delivery",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_quality_audit_03",
+      "query_id": "table-table_quality_audit_03",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "quality audit table check result qa alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-quality-audit-03",
+          "relative_path": "table_quality_audit_03.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "qa",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:qa",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_support_queue_04",
+      "query_id": "table-table_support_queue_04",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "support queue table priority agent support alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-support-queue-04",
+          "relative_path": "table_support_queue_04.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "support",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:support",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_inventory_count_05",
+      "query_id": "table-table_inventory_count_05",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "inventory count table sku stock ops alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-inventory-count-05",
+          "relative_path": "table_inventory_count_05.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "ops",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:ops",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_model_score_06",
+      "query_id": "table-table_model_score_06",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "model score table metric score ml alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-model-score-06",
+          "relative_path": "table_model_score_06.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "ml",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:ml",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_storage_cost_07",
+      "query_id": "table-table_storage_cost_07",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "storage cost table service monthly infra alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-storage-cost-07",
+          "relative_path": "table_storage_cost_07.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "infra",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:infra",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_security_scan_08",
+      "query_id": "table-table_security_scan_08",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "security scan table rule finding security alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-security-scan-08",
+          "relative_path": "table_security_scan_08.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "security",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:security",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_release_gate_09",
+      "query_id": "table-table_release_gate_09",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "release gate table gate evidence release alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-release-gate-09",
+          "relative_path": "table_release_gate_09.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "release",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:release",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_latency_check_10",
+      "query_id": "table-table_latency_check_10",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "latency check table path p95 perf alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-latency-check-10",
+          "relative_path": "table_latency_check_10.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "perf",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:perf",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_policy_matrix_11",
+      "query_id": "table-table_policy_matrix_11",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "policy matrix table area decision policy alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-policy-matrix-11",
+          "relative_path": "table_policy_matrix_11.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "policy",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:policy",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_dataset_slice_12",
+      "query_id": "table-table_dataset_slice_12",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "dataset slice table tag count eval alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-dataset-slice-12",
+          "relative_path": "table_dataset_slice_12.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "eval",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:eval",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_vendor_matrix_13",
+      "query_id": "table-table_vendor_matrix_13",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "vendor matrix table tool fit selection alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-vendor-matrix-13",
+          "relative_path": "table_vendor_matrix_13.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "selection",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:selection",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_error_budget_14",
+      "query_id": "table-table_error_budget_14",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "error budget table service budget sre alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-error-budget-14",
+          "relative_path": "table_error_budget_14.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "sre",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:sre",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_index_delta_15",
+      "query_id": "table-table_index_delta_15",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "index delta table file action sync alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-index-delta-15",
+          "relative_path": "table_index_delta_15.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "sync",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:sync",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_table_coverage_16",
+      "query_id": "table-table_table_coverage_16",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "table coverage table pdf tables document alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-table-coverage-16",
+          "relative_path": "table_table_coverage_16.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "document",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:document",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_ocr_queue_17",
+      "query_id": "table-table_ocr_queue_17",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "ocr queue table batch language ocr alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-ocr-queue-17",
+          "relative_path": "table_ocr_queue_17.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "ocr",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:ocr",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_signal_score_18",
+      "query_id": "table-table_signal_score_18",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "signal score table signal weight ranking alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-signal-score-18",
+          "relative_path": "table_signal_score_18.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "ranking",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:ranking",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_product_roadmap_19",
+      "query_id": "table-table_product_roadmap_19",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "product roadmap table milestone owner planning alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-product-roadmap-19",
+          "relative_path": "table_product_roadmap_19.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "planning",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:planning",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_compliance_matrix_20",
+      "query_id": "table-table_compliance_matrix_20",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "compliance matrix table control status governance alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-compliance-matrix-20",
+          "relative_path": "table_compliance_matrix_20.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "governance",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:governance",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_onboarding_check_21",
+      "query_id": "table-table_onboarding_check_21",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "onboarding check table task assignee people alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-onboarding-check-21",
+          "relative_path": "table_onboarding_check_21.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "people",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:people",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_incident_review_22",
+      "query_id": "table-table_incident_review_22",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "incident review table event impact ops alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-incident-review-22",
+          "relative_path": "table_incident_review_22.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "ops",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:ops",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_model_registry_23",
+      "query_id": "table-table_model_registry_23",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "model registry table model version mlops alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-model-registry-23",
+          "relative_path": "table_model_registry_23.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "mlops",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:mlops",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_access_review_24",
+      "query_id": "table-table_access_review_24",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "access review table role approval identity alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-access-review-24",
+          "relative_path": "table_access_review_24.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "identity",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:identity",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_cost_allocation_25",
+      "query_id": "table-table_cost_allocation_25",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "cost allocation table team amount finance alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-cost-allocation-25",
+          "relative_path": "table_cost_allocation_25.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "finance",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:finance",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_experiment_score_26",
+      "query_id": "table-table_experiment_score_26",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "experiment score table variant uplift analytics alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-experiment-score-26",
+          "relative_path": "table_experiment_score_26.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "analytics",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:analytics",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_data_retention_27",
+      "query_id": "table-table_data_retention_27",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "data retention table dataset policy governance alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-data-retention-27",
+          "relative_path": "table_data_retention_27.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "governance",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:governance",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_task_handoff_28",
+      "query_id": "table-table_task_handoff_28",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "task handoff table task receiver delivery alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-task-handoff-28",
+          "relative_path": "table_task_handoff_28.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "delivery",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:delivery",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_audit_sampling_29",
+      "query_id": "table-table_audit_sampling_29",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "audit sampling table sample finding audit alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-audit-sampling-29",
+          "relative_path": "table_audit_sampling_29.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "audit",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:audit",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "table-table_capacity_plan_30",
+      "query_id": "table-table_capacity_plan_30",
+      "query_set_id": "golden-pdf-table-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "capacity plan table node usage infra alpha beta",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "table-capacity-plan-30",
+          "relative_path": "table_capacity_plan_30.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "infra",
+        "domain:pdf",
+        "task:table-retrieval",
+        "claim:narrow-table"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:table-retrieval",
+        "layout:simple-grid",
+        "topic:infra",
+        "claim:narrow-table"
+      ],
+      "claim_class": "retrieval-quality"
+    }
+  ]
+}

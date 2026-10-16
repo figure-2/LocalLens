@@ -1,0 +1,1 @@
+Sync notes describe added, updated, deleted, skipped, and excluded file counts.

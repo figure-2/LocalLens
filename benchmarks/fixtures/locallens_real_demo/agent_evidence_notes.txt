@@ -1,0 +1,3 @@
+Agent evidence notes
+
+Agent workflows should receive search results as evidence packets before answer generation. Each packet contains title, snippet, source reference, modality, score, and match type. The agent should not answer beyond the returned evidence.

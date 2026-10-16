@@ -1,0 +1,1076 @@
+{
+  "queries": [
+    {
+      "id": "ocr-korean-ocr_korean_notice_14",
+      "query_id": "ocr-korean-ocr_korean_notice_14",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "로컬 검색 승인 문서 보관함 이십칠",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-notice-14",
+          "relative_path": "ocr_korean_notice_14.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_inventory_15",
+      "query_id": "ocr-korean-ocr_korean_inventory_15",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "재고 선반 파랑 수량 사십이",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-inventory-15",
+          "relative_path": "ocr_korean_inventory_15.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_noisy_notice_16",
+      "query_id": "ocr-korean-ocr_korean_noisy_notice_16",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "긴급 점검 안내 서버실 출입 제한",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-noisy-notice-16",
+          "relative_path": "ocr_korean_noisy_notice_16.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_noisy",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-noisy",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-noisy",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_low_contrast_receipt_17",
+      "query_id": "ocr-korean-ocr_korean_low_contrast_receipt_17",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "영수증 총액 확인 금액 십팔만 원",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-low-contrast-receipt-17",
+          "relative_path": "ocr_korean_low_contrast_receipt_17.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_low_contrast",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-low-contrast",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-low-contrast",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_rotated_label_18",
+      "query_id": "ocr-korean-ocr_korean_rotated_label_18",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "문서 라벨 회전 보관 위치 삼층",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-rotated-label-18",
+          "relative_path": "ocr_korean_rotated_label_18.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_rotated",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-rotated",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-rotated",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_bilingual_gate_19",
+      "query_id": "ocr-korean-ocr_korean_bilingual_gate_19",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "출입 승인 완료 visitor badge local",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-bilingual-gate-19",
+          "relative_path": "ocr_korean_bilingual_gate_19.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_bilingual",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko-en",
+        "scan:korean-bilingual",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko-en",
+        "scan:korean-bilingual",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_small_text_20",
+      "query_id": "ocr-korean-ocr_korean_small_text_20",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "회의실 예약 변경 오후 세시 동관",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-small-text-20",
+          "relative_path": "ocr_korean_small_text_20.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_small",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-small",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-small",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_delivery_21",
+      "query_id": "ocr-korean-ocr_korean_delivery_21",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "배송 확인 완료 상자 번호 칠십삼",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-delivery-21",
+          "relative_path": "ocr_korean_delivery_21.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_noisy_schedule_22",
+      "query_id": "ocr-korean-ocr_korean_noisy_schedule_22",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "점검 일정 변경 수요일 오전 열시",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-noisy-schedule-22",
+          "relative_path": "ocr_korean_noisy_schedule_22.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_noisy",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-noisy",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-noisy",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_bilingual_label_23",
+      "query_id": "ocr-korean-ocr_korean_bilingual_label_23",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "보안 라벨 확인 secure zone local",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-bilingual-label-23",
+          "relative_path": "ocr_korean_bilingual_label_23.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_bilingual",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko-en",
+        "scan:korean-bilingual",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko-en",
+        "scan:korean-bilingual",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_noisy_budget_24",
+      "query_id": "ocr-korean-ocr_korean_noisy_budget_24",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "예산 승인 대기 검토 번호 구십일",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-noisy-budget-24",
+          "relative_path": "ocr_korean_noisy_budget_24.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_noisy",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-noisy",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-noisy",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_rotated_invoice_25",
+      "query_id": "ocr-korean-ocr_korean_rotated_invoice_25",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "청구서 검토 완료 승인 코드 팔오이",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-rotated-invoice-25",
+          "relative_path": "ocr_korean_rotated_invoice_25.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_rotated",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-rotated",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-rotated",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_low_contrast_asset_26",
+      "query_id": "ocr-korean-ocr_korean_low_contrast_asset_26",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "자산 라벨 확인 랙 위치 서쪽 둘",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-low-contrast-asset-26",
+          "relative_path": "ocr_korean_low_contrast_asset_26.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_low_contrast",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-low-contrast",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-low-contrast",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_bilingual_ticket_27",
+      "query_id": "ocr-korean-ocr_korean_bilingual_ticket_27",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "지원 티켓 접수 help desk local",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-bilingual-ticket-27",
+          "relative_path": "ocr_korean_bilingual_ticket_27.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_bilingual",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko-en",
+        "scan:korean-bilingual",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko-en",
+        "scan:korean-bilingual",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_small_policy_28",
+      "query_id": "ocr-korean-ocr_korean_small_policy_28",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "정책 변경 알림 버전 이점삼",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-small-policy-28",
+          "relative_path": "ocr_korean_small_policy_28.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_small",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-small",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-small",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_noisy_temperature_29",
+      "query_id": "ocr-korean-ocr_korean_noisy_temperature_29",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "장비 온도 경고 센서 번호 십육",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-noisy-temperature-29",
+          "relative_path": "ocr_korean_noisy_temperature_29.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_noisy",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-noisy",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-noisy",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_rotated_shipping_30",
+      "query_id": "ocr-korean-ocr_korean_rotated_shipping_30",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "출고 명세 확인 팔레트 칠 번",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-rotated-shipping-30",
+          "relative_path": "ocr_korean_rotated_shipping_30.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_rotated",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-rotated",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-rotated",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_low_contrast_meeting_31",
+      "query_id": "ocr-korean-ocr_korean_low_contrast_meeting_31",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "회의 자료 보관 폴더 번호 삼십",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-low-contrast-meeting-31",
+          "relative_path": "ocr_korean_low_contrast_meeting_31.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_low_contrast",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-low-contrast",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-low-contrast",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_bilingual_audit_32",
+      "query_id": "ocr-korean-ocr_korean_bilingual_audit_32",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "감사 로그 완료 audit trail local",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-bilingual-audit-32",
+          "relative_path": "ocr_korean_bilingual_audit_32.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_bilingual",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko-en",
+        "scan:korean-bilingual",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko-en",
+        "scan:korean-bilingual",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_small_backup_33",
+      "query_id": "ocr-korean-ocr_korean_small_backup_33",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "백업 작업 성공 새벽 두시 완료",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-small-backup-33",
+          "relative_path": "ocr_korean_small_backup_33.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_small",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-small",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-small",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_noisy_access_34",
+      "query_id": "ocr-korean-ocr_korean_noisy_access_34",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "접근 권한 확인 승인 번호 사십육",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-noisy-access-34",
+          "relative_path": "ocr_korean_noisy_access_34.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_noisy",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-noisy",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-noisy",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_rotated_asset_35",
+      "query_id": "ocr-korean-ocr_korean_rotated_asset_35",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "회전 자산 태그 보관 선반 동쪽 넷",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-rotated-asset-35",
+          "relative_path": "ocr_korean_rotated_asset_35.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_rotated",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-rotated",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-rotated",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_low_contrast_invoice_36",
+      "query_id": "ocr-korean-ocr_korean_low_contrast_invoice_36",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "저대비 청구서 금액 이십오만 원",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-low-contrast-invoice-36",
+          "relative_path": "ocr_korean_low_contrast_invoice_36.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_low_contrast",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-low-contrast",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-low-contrast",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_bilingual_ops_37",
+      "query_id": "ocr-korean-ocr_korean_bilingual_ops_37",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "운영 카드 확인 ops desk local",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-bilingual-ops-37",
+          "relative_path": "ocr_korean_bilingual_ops_37.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_bilingual",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko-en",
+        "scan:korean-bilingual",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko-en",
+        "scan:korean-bilingual",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-korean-ocr_korean_small_asset_38",
+      "query_id": "ocr-korean-ocr_korean_small_asset_38",
+      "query_set_id": "golden-pdf-ocr-ko-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "소형 자산 라벨 태그 번호 팔십일",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-korean-small-asset-38",
+          "relative_path": "ocr_korean_small_asset_38.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "korean",
+        "korean_small",
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-small",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:ko",
+        "scan:korean-small",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    }
+  ]
+}

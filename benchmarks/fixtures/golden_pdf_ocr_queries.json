@@ -1,0 +1,844 @@
+{
+  "queries": [
+    {
+      "id": "ocr-ocr_receipt_total_01",
+      "query_id": "ocr-ocr_receipt_total_01",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "receipt total approved amount 184 dollars",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-receipt-total-01",
+          "relative_path": "ocr_receipt_total_01.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "clean",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_service_notice_02",
+      "query_id": "ocr-ocr_service_notice_02",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "service window confirmed owner local ops",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-service-notice-02",
+          "relative_path": "ocr_service_notice_02.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "clean",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_inventory_label_03",
+      "query_id": "ocr-ocr_inventory_label_03",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "inventory shelf blue count 42 units",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-inventory-label-03",
+          "relative_path": "ocr_inventory_label_03.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "clean",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_invoice_stamp_04",
+      "query_id": "ocr-ocr_invoice_stamp_04",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "invoice paid marker batch alpha seven",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-invoice-stamp-04",
+          "relative_path": "ocr_invoice_stamp_04.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "clean",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_meeting_card_05",
+      "query_id": "ocr-ocr_meeting_card_05",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "meeting room change floor three east",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-meeting-card-05",
+          "relative_path": "ocr_meeting_card_05.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "clean",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_noisy_receipt_06",
+      "query_id": "ocr-ocr_noisy_receipt_06",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "noisy receipt captured total 216 dollars",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-noisy-receipt-06",
+          "relative_path": "ocr_noisy_receipt_06.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "noisy",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:noisy",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:noisy",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_rotated_notice_07",
+      "query_id": "ocr-ocr_rotated_notice_07",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "rotated notice approved window nine thirty",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-rotated-notice-07",
+          "relative_path": "ocr_rotated_notice_07.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "rotated",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:rotated",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:rotated",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_low_contrast_label_08",
+      "query_id": "ocr-ocr_low_contrast_label_08",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "low contrast label batch delta four",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-low-contrast-label-08",
+          "relative_path": "ocr_low_contrast_label_08.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "low_contrast",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:low-contrast",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:low-contrast",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_bilingual_gate_09",
+      "query_id": "ocr-ocr_bilingual_gate_09",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "bilingual gate notice local access approved",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-bilingual-gate-09",
+          "relative_path": "ocr_bilingual_gate_09.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "bilingual",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:bilingual",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:bilingual",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_bilingual_inventory_10",
+      "query_id": "ocr-ocr_bilingual_inventory_10",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "bilingual inventory card shelf orange count 58",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-bilingual-inventory-10",
+          "relative_path": "ocr_bilingual_inventory_10.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "bilingual",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:bilingual",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:bilingual",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_noisy_invoice_11",
+      "query_id": "ocr-ocr_noisy_invoice_11",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "noisy invoice marker amount 472 dollars",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-noisy-invoice-11",
+          "relative_path": "ocr_noisy_invoice_11.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "noisy",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:noisy",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:noisy",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_rotated_card_12",
+      "query_id": "ocr-ocr_rotated_card_12",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "rotated visitor card desk seven west",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-rotated-card-12",
+          "relative_path": "ocr_rotated_card_12.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "rotated",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:rotated",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:rotated",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_low_contrast_schedule_13",
+      "query_id": "ocr-ocr_low_contrast_schedule_13",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "low contrast schedule shift starts monday",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-low-contrast-schedule-13",
+          "relative_path": "ocr_low_contrast_schedule_13.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "low_contrast",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:low-contrast",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:low-contrast",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_english_badge_14",
+      "query_id": "ocr-ocr_english_badge_14",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "temporary badge issued desk four north",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-english-badge-14",
+          "relative_path": "ocr_english_badge_14.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "clean",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_english_noisy_permit_15",
+      "query_id": "ocr-ocr_english_noisy_permit_15",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "noisy permit accepted lane eight west",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-english-noisy-permit-15",
+          "relative_path": "ocr_english_noisy_permit_15.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "noisy",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:noisy",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:noisy",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_english_rotated_asset_16",
+      "query_id": "ocr-ocr_english_rotated_asset_16",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "rotated asset label rack twelve south",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-english-rotated-asset-16",
+          "relative_path": "ocr_english_rotated_asset_16.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "rotated",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:rotated",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:rotated",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_english_low_contrast_memo_17",
+      "query_id": "ocr-ocr_english_low_contrast_memo_17",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "low contrast memo archive box thirty",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-english-low-contrast-memo-17",
+          "relative_path": "ocr_english_low_contrast_memo_17.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "low_contrast",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:low-contrast",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:low-contrast",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_english_bilingual_ticket_18",
+      "query_id": "ocr-ocr_english_bilingual_ticket_18",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "ticket handoff complete support desk local",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-english-bilingual-ticket-18",
+          "relative_path": "ocr_english_bilingual_ticket_18.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "bilingual",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:bilingual",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:bilingual",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_english_small_invoice_19",
+      "query_id": "ocr-ocr_english_small_invoice_19",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "small invoice note amount 319 dollars",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-english-small-invoice-19",
+          "relative_path": "ocr_english_small_invoice_19.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "small",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:small",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:small",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "ocr-ocr_english_dense_card_20",
+      "query_id": "ocr-ocr_english_dense_card_20",
+      "query_set_id": "golden-pdf-ocr-en-v2",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "query": "dense card approved serial alpha nine",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "case_id": "ocr-english-dense-card-20",
+          "relative_path": "ocr_english_dense_card_20.pdf",
+          "unit_type": "pdf_ocr_text",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "ocr",
+        "local-ocr",
+        "clean",
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean",
+        "claim:narrow-ocr"
+      ],
+      "slice_tags": [
+        "domain:pdf",
+        "task:ocr",
+        "lang:en",
+        "scan:clean",
+        "claim:narrow-ocr"
+      ],
+      "claim_class": "retrieval-quality"
+    }
+  ]
+}

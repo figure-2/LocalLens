@@ -1,0 +1,3304 @@
+{
+  "queries": [
+    {
+      "id": "image-alias-0001-en-001",
+      "query": "blue security badge",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0001.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "badge",
+        "color": "blue",
+        "context": "security"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "security"
+      ]
+    },
+    {
+      "id": "image-alias-0002-en-001",
+      "query": "green security badge",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0002.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "badge",
+        "color": "green",
+        "context": "security"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "security"
+      ]
+    },
+    {
+      "id": "image-alias-0003-en-001",
+      "query": "red archive binder",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0003.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "binder",
+        "color": "red",
+        "context": "archive"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "archive"
+      ]
+    },
+    {
+      "id": "image-alias-0004-en-001",
+      "query": "gray archive binder",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0004.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "binder",
+        "color": "gray",
+        "context": "archive"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "archive"
+      ]
+    },
+    {
+      "id": "image-alias-0005-en-001",
+      "query": "green deadline mark on a calendar",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0005.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "calendar",
+        "color": "green",
+        "context": "deadline"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "deadline"
+      ]
+    },
+    {
+      "id": "image-alias-0006-en-001",
+      "query": "purple deadline mark on a calendar",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0006.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "calendar",
+        "color": "purple",
+        "context": "deadline"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "deadline"
+      ]
+    },
+    {
+      "id": "image-alias-0007-en-001",
+      "query": "black camera on a tripod",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0007.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "camera",
+        "color": "black",
+        "context": "tripod"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "tripod"
+      ]
+    },
+    {
+      "id": "image-alias-0008-en-001",
+      "query": "silver camera on a tripod",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0008.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "camera",
+        "color": "silver",
+        "context": "tripod"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "tripod"
+      ]
+    },
+    {
+      "id": "image-alias-0009-en-001",
+      "query": "blue pie chart on a report",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0009.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "chart",
+        "color": "blue",
+        "context": "pie"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "pie"
+      ]
+    },
+    {
+      "id": "image-alias-0010-en-001",
+      "query": "orange pie chart on a report",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0010.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "chart",
+        "color": "orange",
+        "context": "pie"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "pie"
+      ]
+    },
+    {
+      "id": "image-alias-0011-en-001",
+      "query": "teal checklist on a clipboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0011.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "clipboard",
+        "color": "teal",
+        "context": "checklist"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "checklist"
+      ]
+    },
+    {
+      "id": "image-alias-0012-en-001",
+      "query": "yellow checklist on a clipboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0012.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "clipboard",
+        "color": "yellow",
+        "context": "checklist"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "checklist"
+      ]
+    },
+    {
+      "id": "image-alias-0013-en-001",
+      "query": "blue parcel near a mailbox",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0013.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "mailbox",
+        "color": "blue",
+        "context": "parcel"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "parcel"
+      ]
+    },
+    {
+      "id": "image-alias-0014-en-001",
+      "query": "brown parcel near a mailbox",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0014.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "mailbox",
+        "color": "brown",
+        "context": "parcel"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "parcel"
+      ]
+    },
+    {
+      "id": "image-alias-0015-en-001",
+      "query": "black printer with paper",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0015.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "printer",
+        "color": "black",
+        "context": "paper"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "paper"
+      ]
+    },
+    {
+      "id": "image-alias-0016-en-001",
+      "query": "white printer with paper",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0016.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "printer",
+        "color": "white",
+        "context": "paper"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "paper"
+      ]
+    },
+    {
+      "id": "image-alias-0017-en-001",
+      "query": "red stamp on a receipt",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0017.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "receipt",
+        "color": "red",
+        "context": "stamp"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "stamp"
+      ]
+    },
+    {
+      "id": "image-alias-0018-en-001",
+      "query": "blue stamp on a receipt",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0018.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "receipt",
+        "color": "blue",
+        "context": "stamp"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "stamp"
+      ]
+    },
+    {
+      "id": "image-alias-0019-en-001",
+      "query": "green signal lights on a router",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0019.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "router",
+        "color": "green",
+        "context": "signal"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "signal"
+      ]
+    },
+    {
+      "id": "image-alias-0020-en-001",
+      "query": "amber signal lights on a router",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0020.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "router",
+        "color": "amber",
+        "context": "signal"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "signal"
+      ]
+    },
+    {
+      "id": "image-alias-0021-en-001",
+      "query": "black tablet showing a dashboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0021.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "tablet",
+        "color": "black",
+        "context": "dashboard"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "dashboard"
+      ]
+    },
+    {
+      "id": "image-alias-0022-en-001",
+      "query": "white tablet showing a dashboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0022.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "tablet",
+        "color": "white",
+        "context": "dashboard"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "dashboard"
+      ]
+    },
+    {
+      "id": "image-alias-0023-en-001",
+      "query": "pink transit ticket",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0023.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "ticket",
+        "color": "pink",
+        "context": "transit"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "transit"
+      ]
+    },
+    {
+      "id": "image-alias-0024-en-001",
+      "query": "blue transit ticket",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0024.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "ticket",
+        "color": "blue",
+        "context": "transit"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "transit"
+      ]
+    },
+    {
+      "id": "image-alias-0025-en-001",
+      "query": "blue vial in a lab tray",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0025.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "vial",
+        "color": "blue",
+        "context": "lab"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "lab"
+      ]
+    },
+    {
+      "id": "image-alias-0026-en-001",
+      "query": "amber vial in a lab tray",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0026.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "vial",
+        "color": "amber",
+        "context": "lab"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "lab"
+      ]
+    },
+    {
+      "id": "image-alias-0027-en-001",
+      "query": "black wallet with a card",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0027.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "wallet",
+        "color": "black",
+        "context": "card"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "card"
+      ]
+    },
+    {
+      "id": "image-alias-0028-en-001",
+      "query": "tan wallet with a card",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0028.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "wallet",
+        "color": "tan",
+        "context": "card"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "card"
+      ]
+    },
+    {
+      "id": "image-alias-0029-en-001",
+      "query": "green screen on a workstation",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0029.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "workstation",
+        "color": "green",
+        "context": "screen"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "screen"
+      ]
+    },
+    {
+      "id": "image-alias-0030-en-001",
+      "query": "purple screen on a workstation",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0030.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "workstation",
+        "color": "purple",
+        "context": "screen"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "screen"
+      ]
+    },
+    {
+      "id": "image-alias-0031-en-001",
+      "query": "red compliance badge",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0031.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "badge",
+        "color": "red",
+        "context": "compliance"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "compliance"
+      ]
+    },
+    {
+      "id": "image-alias-0032-en-001",
+      "query": "purple compliance badge",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0032.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "badge",
+        "color": "purple",
+        "context": "compliance"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "compliance"
+      ]
+    },
+    {
+      "id": "image-alias-0033-en-001",
+      "query": "blue manual binder",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0033.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "binder",
+        "color": "blue",
+        "context": "manual"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "manual"
+      ]
+    },
+    {
+      "id": "image-alias-0034-en-001",
+      "query": "green manual binder",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0034.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "binder",
+        "color": "green",
+        "context": "manual"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "manual"
+      ]
+    },
+    {
+      "id": "image-alias-0035-en-001",
+      "query": "red review mark on a calendar",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0035.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "calendar",
+        "color": "red",
+        "context": "review"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "review"
+      ]
+    },
+    {
+      "id": "image-alias-0036-en-001",
+      "query": "orange review mark on a calendar",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0036.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "calendar",
+        "color": "orange",
+        "context": "review"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "review"
+      ]
+    },
+    {
+      "id": "image-alias-0037-en-001",
+      "query": "blue camera for inspection",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0037.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "camera",
+        "color": "blue",
+        "context": "inspection"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "inspection"
+      ]
+    },
+    {
+      "id": "image-alias-0038-en-001",
+      "query": "gray camera for inspection",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0038.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "camera",
+        "color": "gray",
+        "context": "inspection"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "inspection"
+      ]
+    },
+    {
+      "id": "image-alias-0039-en-001",
+      "query": "green budget pie chart",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0039.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "chart",
+        "color": "green",
+        "context": "budget"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "budget"
+      ]
+    },
+    {
+      "id": "image-alias-0040-en-001",
+      "query": "purple budget pie chart",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0040.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "chart",
+        "color": "purple",
+        "context": "budget"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "budget"
+      ]
+    },
+    {
+      "id": "image-alias-0041-en-001",
+      "query": "red audit checklist on a clipboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0041.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "clipboard",
+        "color": "red",
+        "context": "audit"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "audit"
+      ]
+    },
+    {
+      "id": "image-alias-0042-en-001",
+      "query": "blue audit checklist on a clipboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0042.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "clipboard",
+        "color": "blue",
+        "context": "audit"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "audit"
+      ]
+    },
+    {
+      "id": "image-alias-0043-en-001",
+      "query": "green dispatch parcel near a mailbox",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0043.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "mailbox",
+        "color": "green",
+        "context": "dispatch"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "dispatch"
+      ]
+    },
+    {
+      "id": "image-alias-0044-en-001",
+      "query": "gray dispatch parcel near a mailbox",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0044.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "mailbox",
+        "color": "gray",
+        "context": "dispatch"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "dispatch"
+      ]
+    },
+    {
+      "id": "image-alias-0045-en-001",
+      "query": "blue printer with invoice paper",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0045.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "printer",
+        "color": "blue",
+        "context": "invoice"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "invoice"
+      ]
+    },
+    {
+      "id": "image-alias-0046-en-001",
+      "query": "gray printer with invoice paper",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0046.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "printer",
+        "color": "gray",
+        "context": "invoice"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "invoice"
+      ]
+    },
+    {
+      "id": "image-alias-0047-en-001",
+      "query": "green approval stamp on a receipt",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0047.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "receipt",
+        "color": "green",
+        "context": "approval"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "approval"
+      ]
+    },
+    {
+      "id": "image-alias-0048-en-001",
+      "query": "purple approval stamp on a receipt",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0048.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "receipt",
+        "color": "purple",
+        "context": "approval"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "approval"
+      ]
+    },
+    {
+      "id": "image-alias-0049-en-001",
+      "query": "blue backup signal lights on a router",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0049.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "router",
+        "color": "blue",
+        "context": "backup"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "backup"
+      ]
+    },
+    {
+      "id": "image-alias-0050-en-001",
+      "query": "red backup signal lights on a router",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0050.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "router",
+        "color": "red",
+        "context": "backup"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "backup"
+      ]
+    },
+    {
+      "id": "image-alias-0051-en-001",
+      "query": "green tablet showing metrics",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0051.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "tablet",
+        "color": "green",
+        "context": "metrics"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "metrics"
+      ]
+    },
+    {
+      "id": "image-alias-0052-en-001",
+      "query": "purple tablet showing metrics",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0052.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "tablet",
+        "color": "purple",
+        "context": "metrics"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "metrics"
+      ]
+    },
+    {
+      "id": "image-alias-0053-en-001",
+      "query": "green gate transit ticket",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0053.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "ticket",
+        "color": "green",
+        "context": "gate"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "gate"
+      ]
+    },
+    {
+      "id": "image-alias-0054-en-001",
+      "query": "yellow gate transit ticket",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0054.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "ticket",
+        "color": "yellow",
+        "context": "gate"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "gate"
+      ]
+    },
+    {
+      "id": "image-alias-0055-en-001",
+      "query": "red quality vial in a lab tray",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0055.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "vial",
+        "color": "red",
+        "context": "quality"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "quality"
+      ]
+    },
+    {
+      "id": "image-alias-0056-en-001",
+      "query": "teal quality vial in a lab tray",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0056.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "vial",
+        "color": "teal",
+        "context": "quality"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "quality"
+      ]
+    },
+    {
+      "id": "image-alias-0057-en-001",
+      "query": "blue identity wallet with a card",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0057.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "wallet",
+        "color": "blue",
+        "context": "identity"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "identity"
+      ]
+    },
+    {
+      "id": "image-alias-0058-en-001",
+      "query": "gray identity wallet with a card",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0058.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "wallet",
+        "color": "gray",
+        "context": "identity"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "identity"
+      ]
+    },
+    {
+      "id": "image-alias-0059-en-001",
+      "query": "blue monitoring screen on a workstation",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0059.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "workstation",
+        "color": "blue",
+        "context": "monitoring"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "image-alias-0060-en-001",
+      "query": "red monitoring screen on a workstation",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0060.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "workstation",
+        "color": "red",
+        "context": "monitoring"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "image-alias-0061-en-001",
+      "query": "yellow access badge",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0061.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "badge",
+        "color": "yellow",
+        "context": "access"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "access"
+      ]
+    },
+    {
+      "id": "image-alias-0062-en-001",
+      "query": "teal access badge",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0062.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "badge",
+        "color": "teal",
+        "context": "access"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "access"
+      ]
+    },
+    {
+      "id": "image-alias-0063-en-001",
+      "query": "purple contract binder",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0063.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "binder",
+        "color": "purple",
+        "context": "contract"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "contract"
+      ]
+    },
+    {
+      "id": "image-alias-0064-en-001",
+      "query": "tan contract binder",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0064.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "binder",
+        "color": "tan",
+        "context": "contract"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "contract"
+      ]
+    },
+    {
+      "id": "image-alias-0065-en-001",
+      "query": "blue meeting mark on a calendar",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0065.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "calendar",
+        "color": "blue",
+        "context": "meeting"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "meeting"
+      ]
+    },
+    {
+      "id": "image-alias-0066-en-001",
+      "query": "yellow meeting mark on a calendar",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0066.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "calendar",
+        "color": "yellow",
+        "context": "meeting"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "meeting"
+      ]
+    },
+    {
+      "id": "image-alias-0067-en-001",
+      "query": "green camera for survey",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0067.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "camera",
+        "color": "green",
+        "context": "survey"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "survey"
+      ]
+    },
+    {
+      "id": "image-alias-0068-en-001",
+      "query": "red camera for survey",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0068.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "camera",
+        "color": "red",
+        "context": "survey"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "survey"
+      ]
+    },
+    {
+      "id": "image-alias-0069-en-001",
+      "query": "teal forecast pie chart",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0069.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "chart",
+        "color": "teal",
+        "context": "forecast"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "forecast"
+      ]
+    },
+    {
+      "id": "image-alias-0070-en-001",
+      "query": "gray forecast pie chart",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0070.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "chart",
+        "color": "gray",
+        "context": "forecast"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "forecast"
+      ]
+    },
+    {
+      "id": "image-alias-0071-en-001",
+      "query": "green safety checklist on a clipboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0071.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "clipboard",
+        "color": "green",
+        "context": "safety"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "safety"
+      ]
+    },
+    {
+      "id": "image-alias-0072-en-001",
+      "query": "purple safety checklist on a clipboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0072.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "clipboard",
+        "color": "purple",
+        "context": "safety"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "safety"
+      ]
+    },
+    {
+      "id": "image-alias-0073-en-001",
+      "query": "red return parcel near a mailbox",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0073.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "mailbox",
+        "color": "red",
+        "context": "return"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "return"
+      ]
+    },
+    {
+      "id": "image-alias-0074-en-001",
+      "query": "blue return parcel near a mailbox",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0074.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "mailbox",
+        "color": "blue",
+        "context": "return"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "return"
+      ]
+    },
+    {
+      "id": "image-alias-0075-en-001",
+      "query": "green printer with statement paper",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0075.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "printer",
+        "color": "green",
+        "context": "statement"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "statement"
+      ]
+    },
+    {
+      "id": "image-alias-0076-en-001",
+      "query": "tan printer with statement paper",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0076.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "printer",
+        "color": "tan",
+        "context": "statement"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "statement"
+      ]
+    },
+    {
+      "id": "image-alias-0077-en-001",
+      "query": "yellow refund stamp on a receipt",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0077.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "receipt",
+        "color": "yellow",
+        "context": "refund"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "refund"
+      ]
+    },
+    {
+      "id": "image-alias-0078-en-001",
+      "query": "teal refund stamp on a receipt",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0078.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "receipt",
+        "color": "teal",
+        "context": "refund"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "refund"
+      ]
+    },
+    {
+      "id": "image-alias-0079-en-001",
+      "query": "purple alert signal lights on a router",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0079.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "router",
+        "color": "purple",
+        "context": "alert"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "alert"
+      ]
+    },
+    {
+      "id": "image-alias-0080-en-001",
+      "query": "gray alert signal lights on a router",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0080.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "router",
+        "color": "gray",
+        "context": "alert"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "alert"
+      ]
+    },
+    {
+      "id": "image-alias-0081-en-001",
+      "query": "red tablet showing status",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0081.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "tablet",
+        "color": "red",
+        "context": "status"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "status"
+      ]
+    },
+    {
+      "id": "image-alias-0082-en-001",
+      "query": "blue tablet showing status",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0082.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "tablet",
+        "color": "blue",
+        "context": "status"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "status"
+      ]
+    },
+    {
+      "id": "image-alias-0083-en-001",
+      "query": "orange boarding ticket",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0083.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "ticket",
+        "color": "orange",
+        "context": "boarding"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "boarding"
+      ]
+    },
+    {
+      "id": "image-alias-0084-en-001",
+      "query": "teal boarding ticket",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0084.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "ticket",
+        "color": "teal",
+        "context": "boarding"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "boarding"
+      ]
+    },
+    {
+      "id": "image-alias-0085-en-001",
+      "query": "green sample vial in a lab tray",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0085.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "vial",
+        "color": "green",
+        "context": "sample"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "sample"
+      ]
+    },
+    {
+      "id": "image-alias-0086-en-001",
+      "query": "purple sample vial in a lab tray",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0086.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "vial",
+        "color": "purple",
+        "context": "sample"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "sample"
+      ]
+    },
+    {
+      "id": "image-alias-0087-en-001",
+      "query": "red wallet with a badge card",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0087.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "wallet",
+        "color": "red",
+        "context": "badge"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "badge"
+      ]
+    },
+    {
+      "id": "image-alias-0088-en-001",
+      "query": "green wallet with a badge card",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0088.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "wallet",
+        "color": "green",
+        "context": "badge"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "badge"
+      ]
+    },
+    {
+      "id": "image-alias-0089-en-001",
+      "query": "yellow terminal screen on a workstation",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0089.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "workstation",
+        "color": "yellow",
+        "context": "terminal"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "terminal"
+      ]
+    },
+    {
+      "id": "image-alias-0090-en-001",
+      "query": "gray terminal screen on a workstation",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0090.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "workstation",
+        "color": "gray",
+        "context": "terminal"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "terminal"
+      ]
+    },
+    {
+      "id": "image-alias-0091-en-001",
+      "query": "orange policy badge",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0091.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "badge",
+        "color": "orange",
+        "context": "policy"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "policy"
+      ]
+    },
+    {
+      "id": "image-alias-0092-en-001",
+      "query": "brown policy badge",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0092.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "badge",
+        "color": "brown",
+        "context": "policy"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "policy"
+      ]
+    },
+    {
+      "id": "image-alias-0093-en-001",
+      "query": "teal record binder",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0093.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "binder",
+        "color": "teal",
+        "context": "record"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "record"
+      ]
+    },
+    {
+      "id": "image-alias-0094-en-001",
+      "query": "yellow record binder",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0094.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "binder",
+        "color": "yellow",
+        "context": "record"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "record"
+      ]
+    },
+    {
+      "id": "image-alias-0095-en-001",
+      "query": "gray schedule mark on a calendar",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0095.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "calendar",
+        "color": "gray",
+        "context": "schedule"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "schedule"
+      ]
+    },
+    {
+      "id": "image-alias-0096-en-001",
+      "query": "teal schedule mark on a calendar",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0096.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "calendar",
+        "color": "teal",
+        "context": "schedule"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "schedule"
+      ]
+    },
+    {
+      "id": "image-alias-0097-en-001",
+      "query": "purple camera for evidence",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0097.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "camera",
+        "color": "purple",
+        "context": "evidence"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "evidence"
+      ]
+    },
+    {
+      "id": "image-alias-0098-en-001",
+      "query": "tan camera for evidence",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0098.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "camera",
+        "color": "tan",
+        "context": "evidence"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "evidence"
+      ]
+    },
+    {
+      "id": "image-alias-0099-en-001",
+      "query": "red margin pie chart",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0099.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "chart",
+        "color": "red",
+        "context": "margin"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "margin"
+      ]
+    },
+    {
+      "id": "image-alias-0100-en-001",
+      "query": "blue margin pie chart",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0100.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "chart",
+        "color": "blue",
+        "context": "margin"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "margin"
+      ]
+    },
+    {
+      "id": "image-alias-0101-en-001",
+      "query": "gray inventory checklist on a clipboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0101.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "clipboard",
+        "color": "gray",
+        "context": "inventory"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "inventory"
+      ]
+    },
+    {
+      "id": "image-alias-0102-en-001",
+      "query": "orange inventory checklist on a clipboard",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0102.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "clipboard",
+        "color": "orange",
+        "context": "inventory"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "inventory"
+      ]
+    },
+    {
+      "id": "image-alias-0103-en-001",
+      "query": "purple request parcel near a mailbox",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0103.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "mailbox",
+        "color": "purple",
+        "context": "request"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "request"
+      ]
+    },
+    {
+      "id": "image-alias-0104-en-001",
+      "query": "tan request parcel near a mailbox",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0104.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "mailbox",
+        "color": "tan",
+        "context": "request"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "request"
+      ]
+    },
+    {
+      "id": "image-alias-0105-en-001",
+      "query": "red printer with contract paper",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0105.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "printer",
+        "color": "red",
+        "context": "contract"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "contract"
+      ]
+    },
+    {
+      "id": "image-alias-0106-en-001",
+      "query": "teal printer with contract paper",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0106.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "printer",
+        "color": "teal",
+        "context": "contract"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "contract"
+      ]
+    },
+    {
+      "id": "image-alias-0107-en-001",
+      "query": "black verified stamp on a receipt",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0107.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "receipt",
+        "color": "black",
+        "context": "verified"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "verified"
+      ]
+    },
+    {
+      "id": "image-alias-0108-en-001",
+      "query": "orange verified stamp on a receipt",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0108.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "receipt",
+        "color": "orange",
+        "context": "verified"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "verified"
+      ]
+    },
+    {
+      "id": "image-alias-0109-en-001",
+      "query": "yellow uplink signal lights on a router",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0109.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "router",
+        "color": "yellow",
+        "context": "uplink"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "uplink"
+      ]
+    },
+    {
+      "id": "image-alias-0110-en-001",
+      "query": "teal uplink signal lights on a router",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "asset_0110.png",
+          "unit_type": "image",
+          "gain": 3,
+          "max_rank": 3
+        }
+      ],
+      "image_key": {
+        "object": "router",
+        "color": "teal",
+        "context": "uplink"
+      },
+      "tags": [
+        "image",
+        "english",
+        "scene",
+        "synthetic",
+        "sanitized-style",
+        "non-filename",
+        "hard-negative",
+        "uplink"
+      ]
+    }
+  ]
+}

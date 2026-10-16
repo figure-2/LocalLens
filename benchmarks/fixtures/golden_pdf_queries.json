@@ -1,0 +1,487 @@
+{
+  "queries": [
+    {
+      "id": "pdf-born-digital-text-en-001",
+      "query": "born digital PDF page text and relative path evidence",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "born_digital_notes.pdf",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 5,
+          "case_id": "born-digital-notes"
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "english",
+        "domain:pdf",
+        "task:base-pdf"
+      ],
+      "query_id": "pdf-born-digital-text-en-001",
+      "query_set_id": "golden-pdf-base-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "slice_tags": [
+        "domain:pdf",
+        "task:base-pdf",
+        "modality:text",
+        "tag:english",
+        "claim:base-fixture"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "pdf-table-text-en-001",
+      "query": "table heavy PDF benchmark rows for p50 and p95",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "table_report.pdf",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 5,
+          "case_id": "table-report"
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "domain:pdf",
+        "task:base-pdf"
+      ],
+      "query_id": "pdf-table-text-en-001",
+      "query_set_id": "golden-pdf-base-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "slice_tags": [
+        "domain:pdf",
+        "task:base-pdf",
+        "modality:text",
+        "tag:table",
+        "claim:base-fixture"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "pdf-table-unit-en-001",
+      "query": "metric p50 p95 indexing search rows extracted as a PDF table unit",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "table_report.pdf",
+          "unit_type": "pdf_table",
+          "table_no": 0,
+          "gain": 3,
+          "max_rank": 5,
+          "case_id": "table-report"
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "local-table",
+        "domain:pdf",
+        "task:base-pdf"
+      ],
+      "query_id": "pdf-table-unit-en-001",
+      "query_set_id": "golden-pdf-base-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "slice_tags": [
+        "domain:pdf",
+        "task:base-pdf",
+        "modality:text",
+        "tag:table",
+        "tag:local-table",
+        "claim:base-fixture"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "pdf-mixed-language-ko-001",
+      "query": "mixed language PDF local retrieval boundaries",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "mixed_language_notes.pdf",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 5,
+          "case_id": "mixed-language-notes"
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "korean",
+        "english",
+        "mixed-language",
+        "domain:pdf",
+        "task:base-pdf"
+      ],
+      "query_id": "pdf-mixed-language-ko-001",
+      "query_set_id": "golden-pdf-base-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "slice_tags": [
+        "domain:pdf",
+        "task:base-pdf",
+        "modality:text",
+        "tag:korean",
+        "tag:english",
+        "tag:mixed-language",
+        "claim:base-fixture"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "pdf-diagram-region-en-001",
+      "query": "service to storage flow diagram",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "diagram_layout.pdf",
+          "unit_type": "pdf_region",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5,
+          "case_id": "diagram-layout"
+        }
+      ],
+      "tags": [
+        "pdf",
+        "image",
+        "diagram",
+        "domain:pdf",
+        "task:base-pdf"
+      ],
+      "query_id": "pdf-diagram-region-en-001",
+      "query_set_id": "golden-pdf-base-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "slice_tags": [
+        "domain:pdf",
+        "task:base-pdf",
+        "modality:image",
+        "tag:diagram",
+        "claim:base-fixture"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "pdf-scanned-region-en-001",
+      "query": "scanned-like page image",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "scanned_like_page.pdf",
+          "unit_type": "pdf_region",
+          "image_no": 0,
+          "gain": 3,
+          "max_rank": 5,
+          "case_id": "scanned-like-page"
+        }
+      ],
+      "tags": [
+        "pdf",
+        "image",
+        "scanned-like",
+        "domain:pdf",
+        "task:base-pdf"
+      ],
+      "query_id": "pdf-scanned-region-en-001",
+      "query_set_id": "golden-pdf-base-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "slice_tags": [
+        "domain:pdf",
+        "task:base-pdf",
+        "modality:image",
+        "tag:scanned-like",
+        "claim:base-fixture"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "pdf-contract-summary-en-001",
+      "query": "sanitized contract summary obligations renewal owner notes",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "contract_summary.pdf",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 5,
+          "case_id": "contract-summary"
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "contract",
+        "domain:pdf",
+        "task:base-pdf"
+      ],
+      "query_id": "pdf-contract-summary-en-001",
+      "query_set_id": "golden-pdf-base-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "slice_tags": [
+        "domain:pdf",
+        "task:base-pdf",
+        "modality:text",
+        "tag:contract",
+        "claim:base-fixture"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "pdf-invoice-table-en-001",
+      "query": "synthetic invoice rows item owner status table",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "invoice_like_table.pdf",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 5,
+          "case_id": "invoice-like-table"
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "table",
+        "domain:pdf",
+        "task:base-pdf"
+      ],
+      "query_id": "pdf-invoice-table-en-001",
+      "query_set_id": "golden-pdf-base-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "slice_tags": [
+        "domain:pdf",
+        "task:base-pdf",
+        "modality:text",
+        "tag:table",
+        "claim:base-fixture"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "pdf-product-diagram-region-en-001",
+      "query": "product diagram region for local retrieval engine",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "product_diagram.pdf",
+          "unit_type": "pdf_region",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0,
+          "case_id": "product-diagram"
+        }
+      ],
+      "tags": [
+        "pdf",
+        "image",
+        "diagram",
+        "domain:pdf",
+        "task:base-pdf"
+      ],
+      "query_id": "pdf-product-diagram-region-en-001",
+      "query_set_id": "golden-pdf-base-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "slice_tags": [
+        "domain:pdf",
+        "task:base-pdf",
+        "modality:image",
+        "tag:diagram",
+        "claim:base-fixture"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "pdf-multilingual-visual-region-en-001",
+      "query": "multilingual visual notice synthetic Korean English region",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "multilingual_visual_notice.pdf",
+          "unit_type": "pdf_region",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0,
+          "case_id": "multilingual-visual-notice"
+        }
+      ],
+      "tags": [
+        "pdf",
+        "image",
+        "korean",
+        "english",
+        "domain:pdf",
+        "task:base-pdf"
+      ],
+      "query_id": "pdf-multilingual-visual-region-en-001",
+      "query_set_id": "golden-pdf-base-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "slice_tags": [
+        "domain:pdf",
+        "task:base-pdf",
+        "modality:image",
+        "tag:korean",
+        "tag:english",
+        "claim:base-fixture"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "pdf-report-appendix-en-001",
+      "query": "benchmark evidence and limitation labels in appendix notes",
+      "modality": "text",
+      "backend_profile": "sentence-transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "report_appendix.pdf",
+          "unit_type": "document",
+          "gain": 3,
+          "max_rank": 5,
+          "case_id": "report-appendix"
+        }
+      ],
+      "tags": [
+        "pdf",
+        "text",
+        "benchmark",
+        "domain:pdf",
+        "task:base-pdf"
+      ],
+      "query_id": "pdf-report-appendix-en-001",
+      "query_set_id": "golden-pdf-base-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "slice_tags": [
+        "domain:pdf",
+        "task:base-pdf",
+        "modality:text",
+        "tag:benchmark",
+        "claim:base-fixture"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "pdf-scanned-receipt-region-en-001",
+      "query": "synthetic receipt image scanned-like PDF",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "scanned_receipt_like.pdf",
+          "unit_type": "pdf_region",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0,
+          "case_id": "scanned-receipt-like"
+        }
+      ],
+      "tags": [
+        "pdf",
+        "image",
+        "scanned-like",
+        "domain:pdf",
+        "task:base-pdf"
+      ],
+      "query_id": "pdf-scanned-receipt-region-en-001",
+      "query_set_id": "golden-pdf-base-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "slice_tags": [
+        "domain:pdf",
+        "task:base-pdf",
+        "modality:image",
+        "tag:scanned-like",
+        "claim:base-fixture"
+      ],
+      "claim_class": "retrieval-quality"
+    },
+    {
+      "id": "pdf-process-flow-region-en-001",
+      "query": "scan extract index flow visual diagram",
+      "modality": "image",
+      "backend_profile": "transformers",
+      "top_k": 10,
+      "relevant": [
+        {
+          "relative_path": "process_flow.pdf",
+          "unit_type": "pdf_region",
+          "gain": 3,
+          "max_rank": 5,
+          "image_no": 0,
+          "case_id": "process-flow"
+        }
+      ],
+      "tags": [
+        "pdf",
+        "image",
+        "diagram",
+        "domain:pdf",
+        "task:base-pdf"
+      ],
+      "query_id": "pdf-process-flow-region-en-001",
+      "query_set_id": "golden-pdf-base-v1",
+      "corpus_id": "pdf-ocrtable-synthetic",
+      "corpus_version": "2026-06-02-120",
+      "schema_version": "pdf-golden-query-v2",
+      "slice_tags": [
+        "domain:pdf",
+        "task:base-pdf",
+        "modality:image",
+        "tag:diagram",
+        "claim:base-fixture"
+      ],
+      "claim_class": "retrieval-quality"
+    }
+  ]
+}
